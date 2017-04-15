@@ -1,0 +1,43 @@
+<!doctype html>
+<html class="no-js" lang="">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>Planetos</title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+
+        <!-- CSS libraries -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+        <link href='https://api.mapbox.com/mapbox-gl-js/v0.34.0/mapbox-gl.css' rel='stylesheet' />
+        <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        
+        <!-- Site styles-->
+        <link rel="stylesheet" href="css/index.css">
+    </head>
+    <body>
+        <div id="map"></div>
+        <pre id='info'></pre>
+
+        <div id="layer-switcher" class="panel panel-primary">
+            <div class="panel-heading">
+                <h3 class="panel-title">Layers</h3>
+            </div>
+            <div class="panel-body"></div>
+        </div>
+
+        <!-- JS libraries -->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"    ></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/lodash.js/4.17.4/lodash.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"  ></script>
+        <script src='js/lib/mapbox.gl.js'></script>
+        <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
+        <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
+        <!--/*<script src='threebox/src/three64.js'></script>*/-->
+        <!--/*<script src='threebox/src/Threebox.js'></script>*/-->
+        
+        <!-- Site logic -->
+        <script src="js/Map.js"></script>
+        <script src="js/index.js"></script>
+    </body>
+</html>

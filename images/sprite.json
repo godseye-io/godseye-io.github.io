@@ -1,0 +1,30 @@
+{
+    "city-color-bw": {
+        "x": 240,
+        "y": 0,
+        "width": 202,
+        "height": 142,
+        "pixelRatio": 1
+    },
+    "tower-color-bw": {
+        "x": 0,
+        "y": 140,
+        "width": 164,
+        "height": 178,
+        "pixelRatio": 1
+    },
+    "town-color-bw": {
+        "x": 240,
+        "y": 142,
+        "width": 147,
+        "height": 107,
+        "pixelRatio": 1
+    },
+    "village": {
+        "x": 0,
+        "y": 0,
+        "width": 240,
+        "height": 140,
+        "pixelRatio": 1
+    }
+}

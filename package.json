@@ -1,0 +1,30 @@
+{
+  "name": "planetos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "svg-path-parser": "^1.0.1",
+    "svg-to-geojson": "^1.0.0",
+    "svgutils": "^0.13.6"
+  },
+  "devDependencies": {
+    "node-sprite-generator": "^0.10.2",
+    "spritesmith": "^3.1.0",
+    "spritesmith-cli": "^1.1.2"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/aiwebb/planetos.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/aiwebb/planetos/issues"
+  },
+  "homepage": "https://github.com/aiwebb/planetos#readme"
+}

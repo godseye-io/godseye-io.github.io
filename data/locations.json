@@ -1,0 +1,6175 @@
+{
+    "type": "FeatureCollection",
+    "features": [
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.272072544579203,
+                    14.886681291005388
+                ]
+            },
+            "properties": {
+                "name": "Valley of Thenn",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.955096892727084,
+                    14.104431318257213
+                ]
+            },
+            "properties": {
+                "name": "Cave Dwellers",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.2907181711403,
+                    13.325536606375394
+                ]
+            },
+            "properties": {
+                "name": "The Frostfangs",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.656766867522606,
+                    13.14403268610451
+                ]
+            },
+            "properties": {
+                "name": "Giant's Stair",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.000132120958256,
+                    12.456128398417803
+                ]
+            },
+            "properties": {
+                "name": "Skirling Pass",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.995936915049327,
+                    12.640403148428547
+                ]
+            },
+            "properties": {
+                "name": "Forktop",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.476844587745546,
+                    12.759087723073279
+                ]
+            },
+            "properties": {
+                "name": "Ice River Clans",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.53557746997788,
+                    11.19144867233824
+                ]
+            },
+            "properties": {
+                "name": "Frozen Shore",
+                "type": "region_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.694995294834285,
+                    10.482746891396985
+                ]
+            },
+            "properties": {
+                "name": "Lorn Point",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.579070533027277,
+                    10.416736882762066
+                ]
+            },
+            "properties": {
+                "name": "Bay of Ice",
+                "type": "sea_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.26288909008369,
+                    9.776553752680101
+                ]
+            },
+            "properties": {
+                "name": "Bear Island",
+                "type": "region_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.30997861567792,
+                    9.875761641417412
+                ]
+            },
+            "properties": {
+                "name": "Mormont Keep",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.823711661107524,
+                    14.353240858478983
+                ]
+            },
+            "properties": {
+                "name": "Nightrunners",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.161004775560286,
+                    13.807978271055475
+                ]
+            },
+            "properties": {
+                "name": "The Haunted Forest",
+                "type": "region_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.37564584842363,
+                    13.281333456965555
+                ]
+            },
+            "properties": {
+                "name": "Hornfoot",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.804992622938045,
+                    12.304426408599682
+                ]
+            },
+            "properties": {
+                "name": "Fist of the First Men",
+                "type": "region_3",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.869770805837874,
+                    11.787308737588432
+                ]
+            },
+            "properties": {
+                "name": "Craster's Keep",
+                "type": "fort_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.56313248793515,
+                    11.450449468244244
+                ]
+            },
+            "properties": {
+                "name": "Whitetree",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.027807543515195,
+                    12.287675775086342
+                ]
+            },
+            "properties": {
+                "name": "Storrold's Point",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.093861048828813,
+                    12.513420933337258
+                ]
+            },
+            "properties": {
+                "name": "Hardhome",
+                "type": "town",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.281536338346484,
+                    11.720182400434766
+                ]
+            },
+            "properties": {
+                "name": "Skane",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.120023242734874,
+                    11.073223235549946
+                ]
+            },
+            "properties": {
+                "name": "Driftwood Hall",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.561368746284757,
+                    11.019290175412792
+                ]
+            },
+            "properties": {
+                "name": "Kingshouse",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.745994505323324,
+                    10.84356380931996
+                ]
+            },
+            "properties": {
+                "name": "Skagos",
+                "type": "region_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.670896238927355,
+                    10.602255591471263
+                ]
+            },
+            "properties": {
+                "name": "Deepdown",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.42472291765648,
+                    10.229279577067217
+                ]
+            },
+            "properties": {
+                "name": "Bay of Seals",
+                "type": "sea_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.809801467511363,
+                    10.825150538232691
+                ]
+            },
+            "properties": {
+                "name": "Brandon's Gift",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.69430097481893,
+                    10.395969468269598
+                ]
+            },
+            "properties": {
+                "name": "The New Gift",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.698186656214034,
+                    10.24307533585251
+                ]
+            },
+            "properties": {
+                "name": "Northern Mountains",
+                "type": "region_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.595492827788235,
+                    10.620241658182351
+                ]
+            },
+            "properties": {
+                "name": "Queenscrown",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.417839514496848,
+                    11.136052714728436
+                ]
+            },
+            "properties": {
+                "name": "Eastwatch-by-the-Sea",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.54487366078709,
+                    11.137199638490799
+                ]
+            },
+            "properties": {
+                "name": "Greenguard",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.660816652499932,
+                    11.13923105091493
+                ]
+            },
+            "properties": {
+                "name": "The Torches",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.762331354895707,
+                    11.139917731766147
+                ]
+            },
+            "properties": {
+                "name": "Long Barrow",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.874133525438054,
+                    11.13687556127448
+                ]
+            },
+            "properties": {
+                "name": "Rimegate",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.998358159393916,
+                    11.143985450499514
+                ]
+            },
+            "properties": {
+                "name": "Sable Hall",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.131593436325062,
+                    11.141958886842147
+                ]
+            },
+            "properties": {
+                "name": "Woodswatch-by-the-Pool",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.276522175931376,
+                    11.138911791496326
+                ]
+            },
+            "properties": {
+                "name": "Oakenshield",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.386253935911384,
+                    11.14195888684226
+                ]
+            },
+            "properties": {
+                "name": "Castle Black",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.30757833441774,
+                    11.061708089112685
+                ]
+            },
+            "properties": {
+                "name": "Mole's Town",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.573520458519738,
+                    11.138911791622036
+                ]
+            },
+            "properties": {
+                "name": "Queensgate",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.72259841724943,
+                    11.137896086086116
+                ]
+            },
+            "properties": {
+                "name": "Deep Lake",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.872703183277594,
+                    11.137896086099389
+                ]
+            },
+            "properties": {
+                "name": "The Nightfort",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.99692781685596,
+                    11.138911792139183
+                ]
+            },
+            "properties": {
+                "name": "Icemark",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.155314225148572,
+                    11.137896086646137
+                ]
+            },
+            "properties": {
+                "name": "Hoarfrost Hill",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.306454196456713,
+                    11.139927494173605
+                ]
+            },
+            "properties": {
+                "name": "Stonedoor",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.445171704351793,
+                    11.136880377581562
+                ]
+            },
+            "properties": {
+                "name": "Greyguard",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.540410590482963,
+                    11.10640745853857
+                ]
+            },
+            "properties": {
+                "name": "Sentinel Stand",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.627367834125636,
+                    11.063740028425343
+                ]
+            },
+            "properties": {
+                "name": "Shadow Tower",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.697761793398428,
+                    11.025130807545253
+                ]
+            },
+            "properties": {
+                "name": "Westwatch-by-the-Bridge",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.120369117897354,
+                    9.685424144489502
+                ]
+            },
+            "properties": {
+                "name": "Last Hearth",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.91575105171131,
+                    9.502955184846655
+                ]
+            },
+            "properties": {
+                "name": "Breakstone Hill",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.957997579303452,
+                    8.86195529170162
+                ]
+            },
+            "properties": {
+                "name": "Long Lake",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.410243436777222,
+                    8.291252549593807
+                ]
+            },
+            "properties": {
+                "name": "Lonely Hills",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.66964154871718,
+                    7.875199372525998
+                ]
+            },
+            "properties": {
+                "name": "The Dreadfort",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.954040869151186,
+                    8.656969101714068
+                ]
+            },
+            "properties": {
+                "name": "Karhold",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.017012281679172,
+                    8.126428343157144
+                ]
+            },
+            "properties": {
+                "name": "Tumbledown Tower",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.53668675059788,
+                    7.7648731023165425
+                ]
+            },
+            "properties": {
+                "name": "Crofter's Village",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.120088209469003,
+                    7.509469332229131
+                ]
+            },
+            "properties": {
+                "name": "Winterfell",
+                "type": "fort_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.23175379779542,
+                    7.104774907506382
+                ]
+            },
+            "properties": {
+                "name": "Castle Cerwyn",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.657560083814104,
+                    7.919836928048639
+                ]
+            },
+            "properties": {
+                "name": "The Wolfswood",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.910955072771998,
+                    8.820632669767008
+                ]
+            },
+            "properties": {
+                "name": "Deepwood Motte",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.345428400152173,
+                    8.87580101167282
+                ]
+            },
+            "properties": {
+                "name": "Sea Dragon Point",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.064828832265732,
+                    6.617407603730655
+                ]
+            },
+            "properties": {
+                "name": "The Rills",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.546545293187933,
+                    6.369905773835185
+                ]
+            },
+            "properties": {
+                "name": "The Stony Shore",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.60888135328625,
+                    6.540609744923174
+                ]
+            },
+            "properties": {
+                "name": "Torrhen's Square",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.99393573123652,
+                    4.286059621817429
+                ]
+            },
+            "properties": {
+                "name": "Blazewater Bay",
+                "type": "sea_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.237350129775194,
+                    4.418815369342099
+                ]
+            },
+            "properties": {
+                "name": "Saltspear",
+                "type": "sea_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.29457385380755,
+                    3.347588578211912
+                ]
+            },
+            "properties": {
+                "name": "Cape Kraken",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.45223427124816,
+                    3.8179695645077203
+                ]
+            },
+            "properties": {
+                "name": "Flint's Finger",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.849771309052443,
+                    5.387121121331006
+                ]
+            },
+            "properties": {
+                "name": "Barrowton",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.726461249016495,
+                    5.3914667840408725
+                ]
+            },
+            "properties": {
+                "name": "Goldgrass",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.245578002008074,
+                    5.5670386508617895
+                ]
+            },
+            "properties": {
+                "name": "The Barrowlands",
+                "type": "region_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.914217896044278,
+                    6.842952110948147
+                ]
+            },
+            "properties": {
+                "name": "Hornwood",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.931509612813045,
+                    6.675529750034201
+                ]
+            },
+            "properties": {
+                "name": "Sheepshead Hills",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.044547840123016,
+                    5.643575413329174
+                ]
+            },
+            "properties": {
+                "name": "Ramsgate",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.600842006140084,
+                    5.371545887159272
+                ]
+            },
+            "properties": {
+                "name": "Widow's Watch",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.89214347637622,
+                    5.094479550931169
+                ]
+            },
+            "properties": {
+                "name": "White Harbor",
+                "type": "large_city",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.39947782730559,
+                    4.195872127427094
+                ]
+            },
+            "properties": {
+                "name": "Oldcastle",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.852841492060804,
+                    4.554469416695554
+                ]
+            },
+            "properties": {
+                "name": "Moat Cailin",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.635612039475035,
+                    3.184779110891114
+                ]
+            },
+            "properties": {
+                "name": "Greywater Watch",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.012755506694816,
+                    3.584209602819314
+                ]
+            },
+            "properties": {
+                "name": "The Three Sisters",
+                "type": "region_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.028922239594436,
+                    3.7213476314478697
+                ]
+            },
+            "properties": {
+                "name": "Sweetsister",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.693462532159486,
+                    3.652781236513377
+                ]
+            },
+            "properties": {
+                "name": "Littlesister",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.30375669871424,
+                    3.576142011984075
+                ]
+            },
+            "properties": {
+                "name": "Longsister",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.89788413239887,
+                    3.366360195861887
+                ]
+            },
+            "properties": {
+                "name": "The Bite",
+                "type": "sea_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.646666577579452,
+                    3.4309133902273317
+                ]
+            },
+            "properties": {
+                "name": "Pebble",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.6919503173051,
+                    3.5621657750968723
+                ]
+            },
+            "properties": {
+                "name": "The Paps",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.1971607200787,
+                    3.0174397739093735
+                ]
+            },
+            "properties": {
+                "name": "The Fingers",
+                "type": "region_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.303281714489316,
+                    2.3726683299621953
+                ]
+            },
+            "properties": {
+                "name": "Ironman's Bay",
+                "type": "sea_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.494140085240986,
+                    1.6313145707258059
+                ]
+            },
+            "properties": {
+                "name": "Sealskin Point",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.634333813986757,
+                    1.5371027206241479
+                ]
+            },
+            "properties": {
+                "name": "Crow Spike Keep",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.614306138433733,
+                    1.3616222632628023
+                ]
+            },
+            "properties": {
+                "name": "Downdelving",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.4646876211238,
+                    1.298512826998845
+                ]
+            },
+            "properties": {
+                "name": "Nagga's Hill",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.332740582314386,
+                    1.2219549489810788
+                ]
+            },
+            "properties": {
+                "name": "Hardstone Hills",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.458797128302848,
+                    1.1536399191669489
+                ]
+            },
+            "properties": {
+                "name": "Hammerhorn",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.403426495937765,
+                    1.0570538250625674
+                ]
+            },
+            "properties": {
+                "name": "Sparr Keep",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.484504208242953,
+                    0.9141029139377395
+                ]
+            },
+            "properties": {
+                "name": "Sunderly Castle",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.263021678833667,
+                    0.856382976920429
+                ]
+            },
+            "properties": {
+                "name": "Saltcliffe",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.158067823083343,
+                    1.4629766288171595
+                ]
+            },
+            "properties": {
+                "name": "Shatterstone",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.11801247204008,
+                    1.432355843301977
+                ]
+            },
+            "properties": {
+                "name": "Stonehouse",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.161602118763682,
+                    1.3899571589526971
+                ]
+            },
+            "properties": {
+                "name": "Drumm Castle",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.023764587120922,
+                    1.1626406952198778
+                ]
+            },
+            "properties": {
+                "name": "Pebbleton",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.755158115232746,
+                    1.4994854799173964
+                ]
+            },
+            "properties": {
+                "name": "Orkwood",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.54074417691288,
+                    1.4594434826936435
+                ]
+            },
+            "properties": {
+                "name": "Tawney Keep",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.413509531605598,
+                    1.7361887290844606
+                ]
+            },
+            "properties": {
+                "name": "Blacktyde Castle",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.782107895528725,
+                    1.012507496379797
+                ]
+            },
+            "properties": {
+                "name": "Iron Holt",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.79271078254348,
+                    0.9276965657664249
+                ]
+            },
+            "properties": {
+                "name": "Lordsport",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.809204162378876,
+                    0.8794005322282459
+                ]
+            },
+            "properties": {
+                "name": "Pyke",
+                "type": "fort_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.411006847257852,
+                    1.1997901787122203
+                ]
+            },
+            "properties": {
+                "name": "Tower of Glimmering",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.15418136097375,
+                    1.4742121488869344
+                ]
+            },
+            "properties": {
+                "name": "Grey Garden",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.237826358765318,
+                    1.0878931354102832
+                ]
+            },
+            "properties": {
+                "name": "Volmark",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.309690370965427,
+                    1.3081492733608258
+                ]
+            },
+            "properties": {
+                "name": "Kenning Keep",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.246073048651255,
+                    1.2221690518310027
+                ]
+            },
+            "properties": {
+                "name": "Stonetree",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.03270089965355,
+                    1.329349430735192
+                ]
+            },
+            "properties": {
+                "name": "Ten Towers",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.98439885864849,
+                    1.2504368352592934
+                ]
+            },
+            "properties": {
+                "name": "Harbor Hall",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.050372378003004,
+                    1.1677122487322293
+                ]
+            },
+            "properties": {
+                "name": "Harridan Hill",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.024454209666573,
+                    1.095862261361674
+                ]
+            },
+            "properties": {
+                "name": "Castle Myre",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.484778087322013,
+                    0.5334287386561414
+                ]
+            },
+            "properties": {
+                "name": "Banefort",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.65497126882744,
+                    -0.19068702258400094
+                ]
+            },
+            "properties": {
+                "name": "The Crag",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.110319803985618,
+                    -0.06012487238177755
+                ]
+            },
+            "properties": {
+                "name": "Pendric Hills",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.1205201147649,
+                    -0.31498910765979815
+                ]
+            },
+            "properties": {
+                "name": "Nunn's Deep",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.442585010825326,
+                    -0.5644684543755574
+                ]
+            },
+            "properties": {
+                "name": "Castamere",
+                "type": "town",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.109179801540193,
+                    -0.5622005013313753
+                ]
+            },
+            "properties": {
+                "name": "Ashemark",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.47206982528823,
+                    -0.9182560470176213
+                ]
+            },
+            "properties": {
+                "name": "Tarbeck Hall",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.22733468718849,
+                    -0.7844551534246307
+                ]
+            },
+            "properties": {
+                "name": "Fair Isle",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.10712736682686,
+                    -0.6869365109762526
+                ]
+            },
+            "properties": {
+                "name": "Faircastle",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.764221482000266,
+                    -1.5130015049737864
+                ]
+            },
+            "properties": {
+                "name": "Kayce",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.89803717826419,
+                    -1.8167932427502365
+                ]
+            },
+            "properties": {
+                "name": "Feastfires",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.015760808088885,
+                    -1.705710693488271
+                ]
+            },
+            "properties": {
+                "name": "Casterly Rock",
+                "type": "fort_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.027101121302707,
+                    -1.8077255299730979
+                ]
+            },
+            "properties": {
+                "name": "Lannisport",
+                "type": "large_city",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.664211097552112,
+                    -1.8802659451316401
+                ]
+            },
+            "properties": {
+                "name": "Clegane Keep",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.544219405522455,
+                    -2.95209014400578
+                ]
+            },
+            "properties": {
+                "name": "Crakehall",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.605241469159125,
+                    -2.791259966123178
+                ]
+            },
+            "properties": {
+                "name": "Cornfield",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.36123936749516,
+                    -3.4135518789030215
+                ]
+            },
+            "properties": {
+                "name": "Red Lake",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.456497998727883,
+                    -3.499581460247512
+                ]
+            },
+            "properties": {
+                "name": "Red Lake",
+                "type": "sea_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.059802663474358,
+                    -4.189779541852857
+                ]
+            },
+            "properties": {
+                "name": "Old Oak",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.08928747791407,
+                    -4.547091788251095
+                ]
+            },
+            "properties": {
+                "name": "Greenshield",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.29114505366212,
+                    -4.7121201040575045
+                ]
+            },
+            "properties": {
+                "name": "Greyshield",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.06433878880958,
+                    -4.854510361342321
+                ]
+            },
+            "properties": {
+                "name": "Southshield",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.708252953024328,
+                    -4.7595868078858246
+                ]
+            },
+            "properties": {
+                "name": "Oakenshield",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.270732489806818,
+                    -4.723421995484912
+                ]
+            },
+            "properties": {
+                "name": "Grimston",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.628870760364208,
+                    -4.7437649354853875
+                ]
+            },
+            "properties": {
+                "name": "Oakenshield Castle",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.578608795301705,
+                    -4.7643382529522
+                ]
+            },
+            "properties": {
+                "name": "Hewett's Town",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.576812716248696,
+                    -5.324331405800834
+                ]
+            },
+            "properties": {
+                "name": "Mouth of the Mander",
+                "type": "sea_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.518562723611183,
+                    -2.009264148911498
+                ]
+            },
+            "properties": {
+                "name": "Silverhill",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.405023936750496,
+                    -1.6130731690670217
+                ]
+            },
+            "properties": {
+                "name": "Deep Den",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.412991570938402,
+                    -1.288496590731711
+                ]
+            },
+            "properties": {
+                "name": "Hornvale",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.172151893131712,
+                    -0.9971748685245103
+                ]
+            },
+            "properties": {
+                "name": "Sarsfield",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.395733800614124,
+                    -0.7337905610474138
+                ]
+            },
+            "properties": {
+                "name": "Golden Tooth",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.939524832439275,
+                    -0.9747845264449069
+                ]
+            },
+            "properties": {
+                "name": "Oxcross",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.32843277898587,
+                    -3.169187171863115
+                ]
+            },
+            "properties": {
+                "name": "Brandybottom",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.237322506352,
+                    -3.2203275887784457
+                ]
+            },
+            "properties": {
+                "name": "Dosk",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.178172212590567,
+                    -3.314110843863233
+                ]
+            },
+            "properties": {
+                "name": "Standfast",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.086693681301,
+                    -3.1392314820786
+                ]
+            },
+            "properties": {
+                "name": "Horseshoe Hills",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.082332011130433,
+                    -3.407036367523503
+                ]
+            },
+            "properties": {
+                "name": "Leafy Lake",
+                "type": "sea_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.95366274110924,
+                    -3.2306850667501834
+                ]
+            },
+            "properties": {
+                "name": "Stackhouse",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.098366923535423,
+                    -3.2828753126058814
+                ]
+            },
+            "properties": {
+                "name": "Coldmoat",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.36806156202053,
+                    -3.4049469903717835
+                ]
+            },
+            "properties": {
+                "name": "Cobble Cover",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.440711290149835,
+                    -3.596303746987573
+                ]
+            },
+            "properties": {
+                "name": "Goldengrove",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.72600711337998,
+                    -3.1066753824761975
+                ]
+            },
+            "properties": {
+                "name": "Tumbleton",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.591414122619625,
+                    -3.655738911372225
+                ]
+            },
+            "properties": {
+                "name": "Bitterbridge",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.769426258077004,
+                    -4.040872348467133
+                ]
+            },
+            "properties": {
+                "name": "Grassfield Keep",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.834382573724383,
+                    -4.051671415932205
+                ]
+            },
+            "properties": {
+                "name": "Grassy Vale",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.062164206841913,
+                    -4.239790667265623
+                ]
+            },
+            "properties": {
+                "name": "Longtable",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.871411639358598,
+                    -4.506955049154428
+                ]
+            },
+            "properties": {
+                "name": "New Barrel",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.173040628980004,
+                    -4.623713708517059
+                ]
+            },
+            "properties": {
+                "name": "Appleton",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.564075169719416,
+                    -4.672270730012414
+                ]
+            },
+            "properties": {
+                "name": "Cider Hall",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.87120780228227,
+                    -4.841588178853044
+                ]
+            },
+            "properties": {
+                "name": "Ashford",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.833316618147933,
+                    -4.9224889917062455
+                ]
+            },
+            "properties": {
+                "name": "Ashford Meadow",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.98617800145317,
+                    -5.229821005346949
+                ]
+            },
+            "properties": {
+                "name": "Harvest Hall",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.9538130624303,
+                    -5.3241474723200355
+                ]
+            },
+            "properties": {
+                "name": "Whitegrove",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.54653944278195,
+                    -5.227125754195299
+                ]
+            },
+            "properties": {
+                "name": "Highgarden",
+                "type": "fort_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.779299573858196,
+                    -5.466957064481733
+                ]
+            },
+            "properties": {
+                "name": "Dunstonbury",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.07289964110163,
+                    -5.558552887519028
+                ]
+            },
+            "properties": {
+                "name": "Starpike",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.394974706233057,
+                    -5.935559496909036
+                ]
+            },
+            "properties": {
+                "name": "Horn Hill",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.881072725433825,
+                    -6.169713353444891
+                ]
+            },
+            "properties": {
+                "name": "Red Mountains",
+                "type": "region_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.11512950295264,
+                    -6.61888805708702
+                ]
+            },
+            "properties": {
+                "name": "Prince's Pass",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.08806437142431,
+                    -5.822483842978343
+                ]
+            },
+            "properties": {
+                "name": "Dornish Marches",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.99062989791321,
+                    -6.376866843763054
+                ]
+            },
+            "properties": {
+                "name": "Tower of Joy",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.25175180735306,
+                    -6.21276499033263
+                ]
+            },
+            "properties": {
+                "name": "Vulture's Roost",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.909434503348507,
+                    -6.73179097194884
+                ]
+            },
+            "properties": {
+                "name": "Kingsgrave",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.8390651613484,
+                    -7.19119151500179
+                ]
+            },
+            "properties": {
+                "name": "Skyreach",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.943961518488663,
+                    -6.837600505439966
+                ]
+            },
+            "properties": {
+                "name": "Blackmont",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.98562093179723,
+                    -7.2569527952406645
+                ]
+            },
+            "properties": {
+                "name": "High Hermitage",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.372458340912402,
+                    -7.602183021731761
+                ]
+            },
+            "properties": {
+                "name": "Starfall",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.163987193049707,
+                    -6.698718577458777
+                ]
+            },
+            "properties": {
+                "name": "Uplands",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.988248441696783,
+                    -6.858281614437502
+                ]
+            },
+            "properties": {
+                "name": "Oldtown",
+                "type": "large_city",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.759121668593423,
+                    -6.38830876420883
+                ]
+            },
+            "properties": {
+                "name": "Honeyholt",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.869221546549795,
+                    -5.941581914002981
+                ]
+            },
+            "properties": {
+                "name": "Brightwater Keep",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.589334261996555,
+                    -5.82022146606819
+                ]
+            },
+            "properties": {
+                "name": "Bandallon",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.68455577809806,
+                    -7.209720943304859
+                ]
+            },
+            "properties": {
+                "name": "Blackcrown",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.45542900499177,
+                    -7.436978478661928
+                ]
+            },
+            "properties": {
+                "name": "Three Towers",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.402116754903147,
+                    -8.187531454133463
+                ]
+            },
+            "properties": {
+                "name": "Redwyne Straits",
+                "type": "sea_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.432995549994843,
+                    -8.323678216138575
+                ]
+            },
+            "properties": {
+                "name": "Sunhouse",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.5063675024104,
+                    -8.335777871769153
+                ]
+            },
+            "properties": {
+                "name": "Cuy",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.411288248907397,
+                    -8.592806205896167
+                ]
+            },
+            "properties": {
+                "name": "Isle of Pigs",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.79649099910563,
+                    -8.695569070707691
+                ]
+            },
+            "properties": {
+                "name": "Vinetown",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -24.918777586491842,
+                    -8.535367744601032
+                ]
+            },
+            "properties": {
+                "name": "The Arbor",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -25.03570637789082,
+                    -8.3871667907718
+                ]
+            },
+            "properties": {
+                "name": "Ryamsport",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -25.251302427431796,
+                    -8.242263536176338
+                ]
+            },
+            "properties": {
+                "name": "Starfish Harbor",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -25.08858842783019,
+                    -8.101334452129336
+                ]
+            },
+            "properties": {
+                "name": "Mermaid's Palace",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.002377204821073,
+                    -7.982704729584711
+                ]
+            },
+            "properties": {
+                "name": "Dornish Desert",
+                "type": "region_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.334871039081975,
+                    -8.237418254761678
+                ]
+            },
+            "properties": {
+                "name": "Sandstone",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.209797500396576,
+                    -8.209995350931209
+                ]
+            },
+            "properties": {
+                "name": "Hellholt",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.03808066338513,
+                    -8.68028058293811
+                ]
+            },
+            "properties": {
+                "name": "Hellgate Hall",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.485925461195762,
+                    -8.169411677518056
+                ]
+            },
+            "properties": {
+                "name": "The Red Dunes",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.46610209604998,
+                    -7.078643612320917
+                ]
+            },
+            "properties": {
+                "name": "Yronwood",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.652978017254725,
+                    -6.74594105778101
+                ]
+            },
+            "properties": {
+                "name": "Ghaston Grey",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.83161281604373,
+                    -7.4029340847688445
+                ]
+            },
+            "properties": {
+                "name": "The Tor",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.76577837982674,
+                    -8.211197371173029
+                ]
+            },
+            "properties": {
+                "name": "Vaith",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.87299011765768,
+                    -8.713865086348022
+                ]
+            },
+            "properties": {
+                "name": "Saltshore",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.559827465268995,
+                    -8.064350914353412
+                ]
+            },
+            "properties": {
+                "name": "Godsgrace",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.765932672139854,
+                    -8.175850372688657
+                ]
+            },
+            "properties": {
+                "name": "Shandystone",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.377893911082992,
+                    -8.433704287532606
+                ]
+            },
+            "properties": {
+                "name": "Planky Town",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.36610545712196,
+                    -8.575941868580841
+                ]
+            },
+            "properties": {
+                "name": "Lemonwood",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.68944820022449,
+                    -8.198081424924254
+                ]
+            },
+            "properties": {
+                "name": "Sunspear",
+                "type": "fort_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.748390470004608,
+                    -8.214416272170297
+                ]
+            },
+            "properties": {
+                "name": "Shadow City",
+                "type": "small_city",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.821478884492876,
+                    -8.249417250919635
+                ]
+            },
+            "properties": {
+                "name": "Water Gardens",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.557417516407867,
+                    -7.492727975958843
+                ]
+            },
+            "properties": {
+                "name": "Spottswood",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.29065935230051,
+                    -7.464676360484518
+                ]
+            },
+            "properties": {
+                "name": "Ghost Hall",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.281719058705647,
+                    -7.288297743516068
+                ]
+            },
+            "properties": {
+                "name": "The Broken Arm",
+                "type": "region_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.618245952671487,
+                    -6.691279569591643
+                ]
+            },
+            "properties": {
+                "name": "Sea of Dorne",
+                "type": "sea_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.12188545832089,
+                    -6.005249273745775
+                ]
+            },
+            "properties": {
+                "name": "Wyl",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.06457003289856,
+                    -5.5391347022361686
+                ]
+            },
+            "properties": {
+                "name": "Blackhaven",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.731579165456083,
+                    -4.869727592859462
+                ]
+            },
+            "properties": {
+                "name": "Summerhall",
+                "type": "town",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.284310268070584,
+                    -5.4526493285714395
+                ]
+            },
+            "properties": {
+                "name": "The Red Watch",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.049181592020204,
+                    -5.595779139808329
+                ]
+            },
+            "properties": {
+                "name": "Stonehelm",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.96562346752907,
+                    -5.094677384520125
+                ]
+            },
+            "properties": {
+                "name": "King's Mountain",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.639163818200956,
+                    -5.319159676536543
+                ]
+            },
+            "properties": {
+                "name": "Crow's Nest",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.487593267316555,
+                    -5.777542068635398
+                ]
+            },
+            "properties": {
+                "name": "Fawnton",
+                "type": "small_city",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.690876266368804,
+                    -5.493270756307865
+                ]
+            },
+            "properties": {
+                "name": "The Rainwood",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.66561450780179,
+                    -5.7388739285350425
+                ]
+            },
+            "properties": {
+                "name": "Mistwood",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.706421963945218,
+                    -6.177599052638698
+                ]
+            },
+            "properties": {
+                "name": "Weeping Town",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.932534700187318,
+                    -6.026014232284837
+                ]
+            },
+            "properties": {
+                "name": "Greenstone",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.841203726894634,
+                    -5.879126446761148
+                ]
+            },
+            "properties": {
+                "name": "Estermont",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.827711481626437,
+                    -5.106404199490612
+                ]
+            },
+            "properties": {
+                "name": "Rain House",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.435182617526948,
+                    -5.102533188165083
+                ]
+            },
+            "properties": {
+                "name": "Cape Wrath",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.21516499215832,
+                    -4.810205650217682
+                ]
+            },
+            "properties": {
+                "name": "Griffin's Roost",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.691929955763072,
+                    -4.459614930656784
+                ]
+            },
+            "properties": {
+                "name": "Storm's End",
+                "type": "fort_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.540359404303615,
+                    -4.705613748857758
+                ]
+            },
+            "properties": {
+                "name": "Shipbreaker Bay",
+                "type": "sea_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.17631888410932,
+                    -3.907818426280386
+                ]
+            },
+            "properties": {
+                "name": "Bronzegate",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.508198795550243,
+                    -3.432115669597721
+                ]
+            },
+            "properties": {
+                "name": "Wendwater",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.93916326425071,
+                    -3.687076748146083
+                ]
+            },
+            "properties": {
+                "name": "Haystack Hall",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.835863188812226,
+                    -3.989785912206301
+                ]
+            },
+            "properties": {
+                "name": "Felwood",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.179590673140382,
+                    -3.2717868434114905
+                ]
+            },
+            "properties": {
+                "name": "The Kingswood",
+                "type": "region_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.784367155990111,
+                    -4.1730481286385555
+                ]
+            },
+            "properties": {
+                "name": "Evenfall Hall",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.920514719725134,
+                    -3.790460303759062
+                ]
+            },
+            "properties": {
+                "name": "Straits of Tarth",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.512072028407516,
+                    -3.993254020273824
+                ]
+            },
+            "properties": {
+                "name": "Morne",
+                "type": "town",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.642466878251042,
+                    -4.195997642647512
+                ]
+            },
+            "properties": {
+                "name": "Tarth",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.94654255960009,
+                    -2.170153106166353
+                ]
+            },
+            "properties": {
+                "name": "Blackwater Bay",
+                "type": "sea_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.3090163217735,
+                    -1.6800265893732842
+                ]
+            },
+            "properties": {
+                "name": "The Gullet",
+                "type": "sea_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.391772131495742,
+                    -1.4257227387359137
+                ]
+            },
+            "properties": {
+                "name": "Driftmark",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.11285440242807,
+                    -1.2326778998725416
+                ]
+            },
+            "properties": {
+                "name": "Dragonstone",
+                "type": "fort_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.66762483053259,
+                    -1.4624914160028482
+                ]
+            },
+            "properties": {
+                "name": "Hull",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.2754479243755,
+                    -1.8727118592537408
+                ]
+            },
+            "properties": {
+                "name": "Sharp Point",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.078610494062758,
+                    -2.1860813998930695
+                ]
+            },
+            "properties": {
+                "name": "Stonedance",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.34615061412154,
+                    -2.485665678018549
+                ]
+            },
+            "properties": {
+                "name": "Massey's Hook",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.533959426856,
+                    -1.7276733648507303
+                ]
+            },
+            "properties": {
+                "name": "Duskendale",
+                "type": "small_city",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.978692978252553,
+                    -2.0070020406712246
+                ]
+            },
+            "properties": {
+                "name": "Stokeworth",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.192553920998193,
+                    -2.1867191585017878
+                ]
+            },
+            "properties": {
+                "name": "Rosby",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.470221773087644,
+                    -2.5521207916170283
+                ]
+            },
+            "properties": {
+                "name": "King's Landing",
+                "type": "large_city",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.369088164191055,
+                    -1.1965676215311873
+                ]
+            },
+            "properties": {
+                "name": "Antlers",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.77352426426947,
+                    -0.6464532913598902
+                ]
+            },
+            "properties": {
+                "name": "Maidenpool",
+                "type": "small_city",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.155272215530772,
+                    -1.1455299506277896
+                ]
+            },
+            "properties": {
+                "name": "Rook's Rest",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.589789964322676,
+                    -0.430925532890015
+                ]
+            },
+            "properties": {
+                "name": "Claw Isle",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.28636334637318,
+                    -0.6873140884121227
+                ]
+            },
+            "properties": {
+                "name": "Crackclaw Point",
+                "type": "region_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.974448313046054,
+                    -0.5183740674818154
+                ]
+            },
+            "properties": {
+                "name": "Bay of Crabs",
+                "type": "sea_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.916083963195433,
+                    -0.3432860360448302
+                ]
+            },
+            "properties": {
+                "name": "Wickenden",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.145060183586224,
+                    -0.39243394775130014
+                ]
+            },
+            "properties": {
+                "name": "Dyre Den",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.259779920208416,
+                    -0.35294970742687326
+                ]
+            },
+            "properties": {
+                "name": "Quiet Isle",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.39860723106264,
+                    -0.21412413041367984
+                ]
+            },
+            "properties": {
+                "name": "Saltpans",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.752413082668937,
+                    -0.01191429793230725
+                ]
+            },
+            "properties": {
+                "name": "Widow's Ford",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.049145311254165,
+                    -0.026214645462971475
+                ]
+            },
+            "properties": {
+                "name": "Darry",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.993731461339053,
+                    -0.7179752076221604
+                ]
+            },
+            "properties": {
+                "name": "Whitewalls",
+                "type": "fort_2",
+                "ruin": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.891841479519854,
+                    -1.1254815404380452
+                ]
+            },
+            "properties": {
+                "name": "Sow's Hall",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.19852254779471,
+                    -1.3889760480658566
+                ]
+            },
+            "properties": {
+                "name": "Briarwhite",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.432690752319104,
+                    -1.2370747870360361
+                ]
+            },
+            "properties": {
+                "name": "Lake Town",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.348676206129426,
+                    -1.0226113917030943
+                ]
+            },
+            "properties": {
+                "name": "Gods Eye",
+                "type": "sea_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.32901322712766,
+                    -0.8313693537336633
+                ]
+            },
+            "properties": {
+                "name": "Isle of Faces",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.355822296383394,
+                    -0.5444190870724981
+                ]
+            },
+            "properties": {
+                "name": "Harrenhal",
+                "type": "fort_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.598421284096617,
+                    -0.9586161983636998
+                ]
+            },
+            "properties": {
+                "name": "Crossed Elms",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.235541987187617,
+                    -0.8166125495865657
+                ]
+            },
+            "properties": {
+                "name": "Rushing Falls",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.384071979695506,
+                    -1.5277527615503317
+                ]
+            },
+            "properties": {
+                "name": "Tumbler's Falls",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.828011626420363,
+                    -1.4205166201097654
+                ]
+            },
+            "properties": {
+                "name": "Stoney Sept",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.573931373495725,
+                    -0.6475840143488085
+                ]
+            },
+            "properties": {
+                "name": "Acorn Hall",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.498096439233763,
+                    -0.49069194020452755
+                ]
+            },
+            "properties": {
+                "name": "High Heart",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.244441659284888,
+                    -0.10367821779325936
+                ]
+            },
+            "properties": {
+                "name": "Lychester",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.529476412058358,
+                    0.19966105840588
+                ]
+            },
+            "properties": {
+                "name": "Stone Hedge",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.8668111194566,
+                    -0.16643798586143532
+                ]
+            },
+            "properties": {
+                "name": "Atranta",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.000176003751534,
+                    -0.6554285004504123
+                ]
+            },
+            "properties": {
+                "name": "Wayfarer's Rest",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.389760752165444,
+                    -0.8813200733738142
+                ]
+            },
+            "properties": {
+                "name": "Pinkmaiden",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.379300761237857,
+                    -0.6486061777467
+                ]
+            },
+            "properties": {
+                "name": "Mummer's Ford",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.31632894434972,
+                    -0.4826205315370373
+                ]
+            },
+            "properties": {
+                "name": "Sherrer",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.09065964669017,
+                    -0.017658455604987466
+                ]
+            },
+            "properties": {
+                "name": "Stone Mill",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.953046098913063,
+                    0.1247835387998606
+                ]
+            },
+            "properties": {
+                "name": "Riverrun",
+                "type": "fort_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.402100833775705,
+                    0.2189397425719335
+                ]
+            },
+            "properties": {
+                "name": "Willow Wood",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.242744907782367,
+                    0.5400305565720345
+                ]
+            },
+            "properties": {
+                "name": "Blackwood Vale",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.904204740728346,
+                    0.552101372149707
+                ]
+            },
+            "properties": {
+                "name": "Raventree Hall",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.93076174117408,
+                    0.3396519233653805
+                ]
+            },
+            "properties": {
+                "name": "Pennytree",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.744862738055645,
+                    0.47967612978466434
+                ]
+            },
+            "properties": {
+                "name": "Mudgrave",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.319731466967028,
+                    0.4053796500028142
+                ]
+            },
+            "properties": {
+                "name": "Inn of the Kneeling Man",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.135095328441253,
+                    0.3893247197522669
+                ]
+            },
+            "properties": {
+                "name": "Sallytree",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.537034792740172,
+                    0.2528567056308759
+                ]
+            },
+            "properties": {
+                "name": "Riverbend",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.33232950870726,
+                    0.1806083035906454
+                ]
+            },
+            "properties": {
+                "name": "Harroway",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.17980400297614,
+                    0.09631814625136315
+                ]
+            },
+            "properties": {
+                "name": "Ruby Ford",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.147693370181855,
+                    0.15652543342056902
+                ]
+            },
+            "properties": {
+                "name": "Crossroads Inn",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.537034792770015,
+                    0.3973521888276963
+                ]
+            },
+            "properties": {
+                "name": "Nutten",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.155164473978715,
+                    0.895033778383322
+                ]
+            },
+            "properties": {
+                "name": "Fairmarket",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.604713333016292,
+                    0.9752996612127305
+                ]
+            },
+            "properties": {
+                "name": "Wendish Town",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.52443675102981,
+                    1.1558906589540072
+                ]
+            },
+            "properties": {
+                "name": "Ramsford",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.69703140226821,
+                    1.3525210687748341
+                ]
+            },
+            "properties": {
+                "name": "Sevenstreams",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.6408377948992,
+                    1.4367865024909605
+                ]
+            },
+            "properties": {
+                "name": "Oldstones",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.72111437686408,
+                    1.513023983445791
+                ]
+            },
+            "properties": {
+                "name": "Hag's Mire",
+                "type": "town",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.202773868717458,
+                    1.6735150230805544
+                ]
+            },
+            "properties": {
+                "name": "Seagard",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.740626967939818,
+                    1.8219575699932875
+                ]
+            },
+            "properties": {
+                "name": "Cape of Eagles",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.74118352239256,
+                    2.106771669781054
+                ]
+            },
+            "properties": {
+                "name": "The Twins",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.126157902797075,
+                    0.3709986748400098
+                ]
+            },
+            "properties": {
+                "name": "Mountains of the Moon",
+                "type": "region_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.712305668090295,
+                    1.284267281472836
+                ]
+            },
+            "properties": {
+                "name": "The Vale of Arryn",
+                "type": "region_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.186929898385955,
+                    0.7394972364366481
+                ]
+            },
+            "properties": {
+                "name": "The Bloody Gate",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.69179130009178,
+                    1.1346459661181427
+                ]
+            },
+            "properties": {
+                "name": "The Gates of the Moon",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.762200917312356,
+                    1.2572682352527806
+                ]
+            },
+            "properties": {
+                "name": "The Eyrie",
+                "type": "fort_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.07627496921731,
+                    0.5964164848953146
+                ]
+            },
+            "properties": {
+                "name": "Redfort",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.89230145379497,
+                    1.0279149255227509
+                ]
+            },
+            "properties": {
+                "name": "Ironoaks",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.678045721543384,
+                    0.693635515775668
+                ]
+            },
+            "properties": {
+                "name": "Gulltown",
+                "type": "small_city",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.689402111431718,
+                    1.0774349312282965
+                ]
+            },
+            "properties": {
+                "name": "Runestone",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -14.892183542596484,
+                    0.9911404384688751
+                ]
+            },
+            "properties": {
+                "name": "Witch Isle",
+                "type": "region_3",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.966498024256026,
+                    1.36355073225198
+                ]
+            },
+            "properties": {
+                "name": "Old Anchor",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.075907868598904,
+                    1.965237462064053
+                ]
+            },
+            "properties": {
+                "name": "Longbow Hall",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.34100970072552,
+                    1.8358458623294638
+                ]
+            },
+            "properties": {
+                "name": "Heart's Home",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.367627344996606,
+                    1.9130279860186334
+                ]
+            },
+            "properties": {
+                "name": "Strongsong",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.793745374044022,
+                    2.3555360093043305
+                ]
+            },
+            "properties": {
+                "name": "Snakewood",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -16.71066541000613,
+                    2.720728613319494
+                ]
+            },
+            "properties": {
+                "name": "Coldwater Burn",
+                "type": "fort_2",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -20.879963322020984,
+                    3.3477281912284127
+                ]
+            },
+            "properties": {
+                "name": "The Neck",
+                "type": "region_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.177283302566593,
+                    17.024835919942063
+                ]
+            },
+            "properties": {
+                "name": "Lands of Always Winter",
+                "type": "region_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.88539101432883,
+                    6.735633618223005
+                ]
+            },
+            "properties": {
+                "name": "The North",
+                "type": "region_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.31774432302683,
+                    2.0548421944605195
+                ]
+            },
+            "properties": {
+                "name": "Westeros",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -22.161516659076995,
+                    -5.121149347438958
+                ]
+            },
+            "properties": {
+                "name": "The Reach",
+                "type": "region_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.662842453149295,
+                    -7.6406537892554525
+                ]
+            },
+            "properties": {
+                "name": "Dorne",
+                "type": "region_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -23.77830585083936,
+                    -1.2328944641324142
+                ]
+            },
+            "properties": {
+                "name": "The Westerlands",
+                "type": "region_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -18.58498299172416,
+                    -2.138874490832947
+                ]
+            },
+            "properties": {
+                "name": "The Crownlands",
+                "type": "region_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -17.41022278305462,
+                    -5.121690415810292
+                ]
+            },
+            "properties": {
+                "name": "The Stormlands",
+                "type": "region_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -19.81090976376626,
+                    -0.05768616016032979
+                ]
+            },
+            "properties": {
+                "name": "The Riverlands",
+                "type": "region_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -14.907875469547434,
+                    -1.8028187543582277
+                ]
+            },
+            "properties": {
+                "name": "The Narrow Sea",
+                "type": "sea_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -26.73983273856507,
+                    -1.5334683360286476
+                ]
+            },
+            "properties": {
+                "name": "The Sunset Sea",
+                "type": "sea_1",
+                "ruin": false
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -12.682009492789746,
+                    -8.287100763500277
+                ]
+            },
+            "properties": {
+                "name": "Lys",
+                "type": "small_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -13.893589069380084,
+                    -5.728510989150578
+                ]
+            },
+            "properties": {
+                "name": "Tyrosh",
+                "type": "small_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -11.686030893536213,
+                    -5.28176429562474
+                ]
+            },
+            "properties": {
+                "name": "Myr",
+                "type": "small_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -12.83730832310576,
+                    -2.422350525903397
+                ]
+            },
+            "properties": {
+                "name": "Pentos",
+                "type": "large_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -11.15647943747507,
+                    -1.8748550917747053
+                ]
+            },
+            "properties": {
+                "name": "Ghoyan Drohe",
+                "type": "ruin"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -11.965021708896671,
+                    -0.8521376598943107
+                ]
+            },
+            "properties": {
+                "name": "Andalos",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -9.616590244535331,
+                    -0.3981637635197046
+                ]
+            },
+            "properties": {
+                "name": "Norvos",
+                "type": "small_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -12.917962031182356,
+                    2.7299504591803583
+                ]
+            },
+            "properties": {
+                "name": "Braavos",
+                "type": "large_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -10.559058259355737,
+                    2.0833918138734475
+                ]
+            },
+            "properties": {
+                "name": "Lorath",
+                "type": "small_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -6.629315420382113,
+                    -2.412605141610868
+                ]
+            },
+            "properties": {
+                "name": "Qohor",
+                "type": "small_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -8.724946338636414,
+                    -5.247025643690378
+                ]
+            },
+            "properties": {
+                "name": "Chroyane",
+                "type": "ruin"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -7.46876229960651,
+                    -8.495407469944524
+                ]
+            },
+            "properties": {
+                "name": "Volantis",
+                "type": "large_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -3.5914764388702736,
+                    -7.814644462935604
+                ]
+            },
+            "properties": {
+                "name": "Mantarys",
+                "type": "small_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -4.490904439595141,
+                    -12.868079475386253
+                ]
+            },
+            "properties": {
+                "name": "Valyria",
+                "type": "ruin"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.047822831767263,
+                    -12.596817164036338
+                ]
+            },
+            "properties": {
+                "name": "Gulf of Grief",
+                "type": "sea_2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.1335844366084302,
+                    -11.561802400593152
+                ]
+            },
+            "properties": {
+                "name": "Old Ghis",
+                "type": "ruin"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.5254542111426304,
+                    -13.43144557766017
+                ]
+            },
+            "properties": {
+                "name": "New Ghis",
+                "type": "small_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    0.7016228785060719,
+                    -9.444886961371068
+                ]
+            },
+            "properties": {
+                "name": "Astapor",
+                "type": "small_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.2185608570716226,
+                    -7.560344380938375
+                ]
+            },
+            "properties": {
+                "name": "Yunkai",
+                "type": "small_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.8672673399683504,
+                    -6.8363065359746855
+                ]
+            },
+            "properties": {
+                "name": "Meereen",
+                "type": "large_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    1.9566738301865882,
+                    -3.6875726186389244
+                ]
+            },
+            "properties": {
+                "name": "The Dothraki Sea",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    4.919041626461109,
+                    -7.437753499143781
+                ]
+            },
+            "properties": {
+                "name": "Lhazar",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.8223956837863398,
+                    -10.461690628743227
+                ]
+            },
+            "properties": {
+                "name": "Ghiscar",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    3.534781731334874,
+                    -14.798040423629345
+                ]
+            },
+            "properties": {
+                "name": "The Summer Sea",
+                "type": "sea_1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.020211056015654,
+                    -9.495425986653302
+                ]
+            },
+            "properties": {
+                "name": "Vaes Tolorro",
+                "type": "ruin"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.25894460872314,
+                    -8.056995040511481
+                ]
+            },
+            "properties": {
+                "name": "The Red Waste",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    8.453767799468153,
+                    -4.301496838027546
+                ]
+            },
+            "properties": {
+                "name": "Essos",
+                "type": "continent"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.513162330843073,
+                    -11.520172049021724
+                ]
+            },
+            "properties": {
+                "name": "Qarth",
+                "type": "large_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    9.940248062717018,
+                    -13.680936765176654
+                ]
+            },
+            "properties": {
+                "name": "Faros",
+                "type": "small_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    11.56467007952196,
+                    -15.024807931181996
+                ]
+            },
+            "properties": {
+                "name": "Great Moraq",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.774977439659892,
+                    -17.580750928741523
+                ]
+            },
+            "properties": {
+                "name": "Cinnamon Straits",
+                "type": "sea_2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    16.194436732722608,
+                    -13.945306392836855
+                ]
+            },
+            "properties": {
+                "name": "Yin",
+                "type": "small_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    16.3734226116469,
+                    -17.489508843358692
+                ]
+            },
+            "properties": {
+                "name": "Marahi",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    16.71407433864374,
+                    -19.530335039159993
+                ]
+            },
+            "properties": {
+                "name": "The Jade Sea",
+                "type": "sea_1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    19.893791590371166,
+                    -14.821675483375714
+                ]
+            },
+            "properties": {
+                "name": "Leng",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    16.084685915793273,
+                    -11.53552451019209
+                ]
+            },
+            "properties": {
+                "name": "Yi Ti",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    22.42282713118209,
+                    -18.62623057127692
+                ]
+            },
+            "properties": {
+                "name": "Asshai",
+                "type": "large_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    25.319103324747005,
+                    -18.581507324503363
+                ]
+            },
+            "properties": {
+                "name": "Saffron Straits",
+                "type": "sea_2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.10879596460893,
+                    -20.042747022098226
+                ]
+            },
+            "properties": {
+                "name": "Ulthos",
+                "type": "continent"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    27.765602091336575,
+                    -17.40337635626132
+                ]
+            },
+            "properties": {
+                "name": "Ulos",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    25.50491335765804,
+                    -15.636905971614084
+                ]
+            },
+            "properties": {
+                "name": "Shadow Lands",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    26.771322638268288,
+                    -3.4643688703630744
+                ]
+            },
+            "properties": {
+                "name": "The Grey Waste",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    27.142942704070634,
+                    0.32713798601106703
+                ]
+            },
+            "properties": {
+                "name": "Mossovy",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    22.606081067282645,
+                    -4.869667796545045
+                ]
+            },
+            "properties": {
+                "name": "Bleeding Sea",
+                "type": "sea_2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    18.30857332602298,
+                    -3.2510317808207816
+                ]
+            },
+            "properties": {
+                "name": "Plains of the Jogos Nhai",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    14.31365761855443,
+                    -4.070011455406103
+                ]
+            },
+            "properties": {
+                "name": "Great Sand Sea",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.30207557355945,
+                    -8.346741473791269
+                ]
+            },
+            "properties": {
+                "name": "Bayasabhad",
+                "type": "small_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    12.31108873139354,
+                    -5.595837981783305
+                ]
+            },
+            "properties": {
+                "name": "Samyriana",
+                "type": "small_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    13.28659140414689,
+                    -2.1203330891393932
+                ]
+            },
+            "properties": {
+                "name": "Kayakayanaya",
+                "type": "small_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.642047297205011,
+                    -0.837670066055253
+                ]
+            },
+            "properties": {
+                "name": "Vaes Dothrak",
+                "type": "large_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    16.129620033721125,
+                    0.4210098251109571
+                ]
+            },
+            "properties": {
+                "name": "Leviathan Sound",
+                "type": "sea_2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    22.393035912449278,
+                    1.6206521636800488
+                ]
+            },
+            "properties": {
+                "name": "The Thousand Islands",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.970322472775166,
+                    6.714415976938881
+                ]
+            },
+            "properties": {
+                "name": "Ibben",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    7.924024882200854,
+                    6.1873124057630235
+                ]
+            },
+            "properties": {
+                "name": "Port of Ibben",
+                "type": "small_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    10.080284166544772,
+                    12.551430544836492
+                ]
+            },
+            "properties": {
+                "name": "The Shivering Sea",
+                "type": "sea_1"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    2.7609333129213667,
+                    -19.270652937458905
+                ]
+            },
+            "properties": {
+                "name": "Sothoryos",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -12.906182044668014,
+                    -17.231796106170478
+                ]
+            },
+            "properties": {
+                "name": "The Summer Islands",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -13.28786138155553,
+                    -15.646601103533996
+                ]
+            },
+            "properties": {
+                "name": "Tall Trees Town",
+                "type": "town"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -14.296349404067087,
+                    -14.835761143036308
+                ]
+            },
+            "properties": {
+                "name": "Lotus Port",
+                "type": "small_city"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -15.762752672495537,
+                    10.923293880346748
+                ]
+            },
+            "properties": {
+                "name": "Skagos",
+                "type": "region"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -1.0797229897389684,
+                    -8.70291668489341
+                ]
+            },
+            "properties": {
+                "name": "Slaver's Bay",
+                "type": "sea_2"
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Polygon",
+                "coordinates":  [
+                    [
+                        [-19.928625660241437, 10.904709664677682],
+                        [-19.863735868403978, 10.936173720802046],
+                        [-19.79403942531826,  10.973139720411837],
+                        [-19.74196737017874,  11.005382880738381],
+                        [-19.697906400433936, 11.025041613332121],
+                        [-19.627408848899563, 11.066713777765116],
+                        [-19.539286909418337, 11.112310485293492],
+                        [-19.445270579132796, 11.142215482606858],
+                        [-19.15365936867377,  11.142215482657463],
+                        [-18.995840986175352, 11.143787494584146],
+                        [-18.870868053839985, 11.144573497408516],
+                        [-18.722662973838254, 11.144573497429036],
+                        [-18.572855676750834, 11.14693149297213 ],
+                        [-18.276429803104833, 11.1445087697995  ],
+                        [-18.131429157279342, 11.148438752688918],
+                        [-17.997644030976687, 11.150796716932703],
+                        [-17.875074424238875, 11.144508769843426],
+                        [-17.762118120032227, 11.146080769372077],
+                        [-17.660377334914898, 11.144508770337552],
+                        [-17.544216596531385, 11.14057873436407 ],
+                        [-17.413635904412814, 11.134290566378453],
+                        [
+                            -17.43045918377507,
+                            11.28302030996385
+                        ],
+                        [
+                            -17.546619922143634,
+                            11.283806206530548
+                        ],
+                        [
+                            -17.65999119877489,
+                            11.278554174296053
+                        ],
+                        [
+                            -17.762542585414053,
+                            11.279843988868327
+                        ],
+                        [
+                            -17.872982540288717,
+                            11.275974527981438
+                        ],
+                        [
+                            -17.997884870192905,
+                            11.28435829470657
+                        ],
+                        [
+                            -18.13264791035826,
+                            11.294031570282135
+                        ],
+                        [
+                            -18.276614280092417,
+                            11.279199082375092
+                        ],
+                        [
+                            -18.38678253122569,
+                            11.283301057759706
+                        ],
+                        [
+                            -18.572821264682375,
+                            11.278786735469359
+                        ],
+                        [
+                            -18.72138929916602,
+                            11.277496916207786
+                        ],
+                        [
+                            -18.87258685639273,
+                            11.278141826569344
+                        ],
+                        [
+                            -18.996831805631103,
+                            11.279431642975132
+                        ],
+                        [
+                            -19.15526055036517,
+                            11.278141826556043
+                        ],
+                        [
+                            -19.30652504655717,
+                            11.278753901367315
+                        ],
+                        [
+                            -19.44523237082069,
+                            11.275529342064834
+                        ],
+                        [
+                            -19.510970439196,
+                            11.26843518538927
+                        ],
+                        [
+                            -19.5425247120032,
+                            11.246506696121449
+                        ],
+                        [
+                            -19.628641581563215,
+                            11.201354602593701
+                        ],
+                        [
+                            -19.699638695392878,
+                            11.175550269388998
+                        ],
+                        [
+                            -19.838996197468276,
+                            11.09554240055248
+                        ],
+                        [
+                            -19.89750307830741,
+                            11.05811190248716
+                        ],
+                        [
+                            -19.933659015905192,
+                            11.027131356992149
+                        ],
+                        [-19.928625660241437, 10.904709664677682]
+                    ]
+                ]
+            },
+            "properties": {
+                "name": "The Wall",
+                "type": "region",
+                "extrude": true
+            }
+        },
+        {
+            "type": "Feature",
+            "geometry": {
+                "type": "Point",
+                "coordinates": [
+                    -21.5009859542279,
+                    3.9635940916919594
+                ]
+            },
+            "properties": {
+                "name": "Westeros",
+                "type": "continent"
+            }
+        }
+    ]
+}
