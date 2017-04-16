@@ -1,4 +1,4 @@
-let spritesmith = require('spritesmith')
+let spritesmith = require('../../foo/node_modules/spritesmith')
 let _  = require('lodash')
 let fs = require('fs')
 
@@ -10,6 +10,13 @@ fs.readdir(dir, (err, results) => {
     var sprites = _(results).chain()
         .filter(f => {
             return f.endsWith('.png')
+        })
+        .filter(f => {
+            if (['water3.png', 'water2.png', 'water.jpg'].includes(f)) {
+                return false
+            }
+
+            return true
         })
         .map(f => {
             return dir + '/' + f

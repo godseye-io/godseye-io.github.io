@@ -3,16 +3,17 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "dependencies": {
+  "dependencies": {},
+  "devDependencies": {
     "lodash": "^4.17.4",
+    "md5": "^2.2.1",
+    "node-sprite-generator": "^0.10.2",
+    "spritesmith": "^3.1.0",
+    "spritesmith-cli": "^1.1.2",
+    "superagent": "^3.5.2",
     "svg-path-parser": "^1.0.1",
     "svg-to-geojson": "^1.0.0",
     "svgutils": "^0.13.6"
-  },
-  "devDependencies": {
-    "node-sprite-generator": "^0.10.2",
-    "spritesmith": "^3.1.0",
-    "spritesmith-cli": "^1.1.2"
   },
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"

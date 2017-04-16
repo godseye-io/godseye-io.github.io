@@ -148,25 +148,70 @@ class Map {
         })
 
         // this.addLine('Winterfell', 'The Wall')
+
+        // Create a popup, but don't add it to the map yet.
+        var popup = new mapboxgl.Popup({closeButton: false, closeOnClick: false})
+    
+    
+        this.map.on('click', e => {
+            var features = this.map.queryRenderedFeatures(e.point)
+
+            if (features.length && features[0].properties.wiki_html) {
+                this.map.getCanvas().style.cursor = features.length ? 'pointer' : ''
+
+                let center = features[0].geometry.type == 'Point'
+                    ? features[0].geometry.coordinates
+                    : turf.centroid(features[0]).geometry.coordinates
+
+                let html = features[0].properties.wiki_html
+
+                let imgHtml = features[0].properties.wiki_image && `<img class="wiki-image" src="${features[0].properties.wiki_image}" />`
+
+                html = `
+                    <div class="wiki-content-wrapper">
+                        ${imgHtml || ''}
+                        <div class="wiki-desc">
+                            ${html}
+                        </div>
+                    </div>
+                `
+
+                new mapboxgl.Popup({offset: [0, -30]})
+                    .setLngLat(center)
+                    .setHTML(html)
+                    .addTo(this.map)
+            }
+        })
+
+        this.map.on('mousemove', e => {
+            var features = this.map.queryRenderedFeatures(e.point)
+
+            if (features.length && features[0].properties.wiki_html) {
+                this.map.getCanvas().style.cursor = features.length ? 'pointer' : ''
+            }
+            else {
+                this.map.getCanvas().style.cursor = ''
+            }
+        })
     }
 
     buildLayers() {
         let layers = [
-            {id: 'bg',       type: 'background',            paint: {'background-color': '#eee'}},
-            {id: 'water',    type: 'fill', source: 'world', paint: {'fill-color': '#ACC7F2'}, filter: ['==', 'type', 'water'   ]},
-            {id: 'land',     type: 'fill', source: 'world', paint: {'fill-color': '#eeeeee'}, filter: ['==', 'type', 'land'    ]},
-            {id: 'forest',   type: 'fill', source: 'world', paint: {'fill-color': '#a4c9a4'}, filter: ['==', 'type', 'forest'  ]},
-            {id: 'mountain', type: 'fill', source: 'world', paint: {'fill-color': '#c3c3c3'}, filter: ['==', 'type', 'mountain']},
-            {id: 'swamp',    type: 'fill', source: 'world', paint: {'fill-color': '#d7e2b3'}, filter: ['==', 'type', 'swamp'   ]},
+            {id: 'bg',       type: 'background',            paint: {'background-color': '#eee', 'background-pattern': 'background'}},
+            {id: 'water',    type: 'fill', source: 'world', paint: {'fill-color': '#ACC7F2', 'fill-pattern': 'water4'}, filter: ['==', 'type', 'water'   ]},
+            {id: 'land',     type: 'fill', source: 'world', paint: {'fill-color': '#eeeeee', 'fill-pattern': 'grass' }, filter: ['==', 'type', 'land'    ]},
+            {id: 'forest',   type: 'fill', source: 'world', paint: {'fill-color': '#a4c9a4', 'fill-pattern': 'forest'}, filter: ['==', 'type', 'forest'  ]},
+            {id: 'mountain', type: 'fill', source: 'world', paint: {'fill-color': '#c3c3c3', 'fill-pattern': 'mountains'}, filter: ['==', 'type', 'mountain']},
+            {id: 'swamp',    type: 'fill', source: 'world', paint: {'fill-color': '#d7e2b3', 'fill-pattern': 'swamp'}, filter: ['==', 'type', 'swamp'   ]},
             {id: 'road',     type: 'line', source: 'world',                                   filter: ['==', 'type', 'road'    ],
                 layout: {'line-cap': 'round', 'line-join': 'round'},
-                paint:  {'line-opacity': 0.9, 'line-color': '#aaa', 'line-width': 6}},
+                paint:  {'line-opacity': 0.9, 'line-color': '#333', 'line-width': 6}},
             {
                 id: 'wall-extrusion',
                 type: 'fill-extrusion',
                 source: 'location',
                 "paint": {
-                    'fill-extrusion-color': '#A5F2F3',
+                    'fill-extrusion-color': '#99DBDA',
                     'fill-extrusion-opacity': 0.9,
                     'fill-extrusion-height': 50000
                 }
@@ -205,9 +250,9 @@ class Map {
                 'text-padding': 0.5,
             },
             "paint": {
-                "text-color": "#202",
-                "text-opacity": 1,
-                "text-halo-color": '#fff',
+                "text-halo-color": "#202",
+                // "text-opacity": 1,
+                "text-color": '#fff',
                 // "text-halo-color": {
                 //     property: 'is_capital',
                 //     type: 'categorical',
@@ -216,7 +261,7 @@ class Map {
                 //         [true, '#00B7EB']
                 //     ]
                 // },
-                "text-halo-width": 2,
+                "text-halo-width": 1,
                 // "text-halo-width": {
                 //     property: 'is_capital',
                 //     type: 'categorical',
@@ -238,7 +283,7 @@ class Map {
                 filter: ['all', ['==', 'type', 'fort_2'], ['==', 'ruin', true]],
                 layout: {textOffset: [0, -2], textAnchor: 'bottom'},
                 paint:  {iconTranslate: [0, 0], 'text-opacity': 0.35, 'icon-opacity': 0.3}},
-            region_3:   {size: 12, font: 'Light Italic',    transform: 'uppercase', paint: {'text-opacity': 0.65}},
+            region_3:   {size: 12, font: 'Light Italic',    transform: 'uppercase'},
             town:       {size: 14, font: 'Light', icon: 'village', iconScale: 0.2,
                 filter: ['all', ['==', 'type', 'town'], ['==', 'ruin', false]],
                 layout: {textOffset: [0, -2], textAnchor: 'bottom'},
@@ -247,27 +292,26 @@ class Map {
                 filter: ['all', ['==', 'type', 'fort_3'], ['==', 'ruin', false]],
                 layout: {textOffset: [0, -2], textAnchor: 'bottom'},
                 paint:  {iconTranslate: [0, 0]}},
-            region_2:   {size: 16, font: 'Light Italic',    transform: 'uppercase', paint: {'text-opacity': 0.65}},
+            region_2:   {size: 16, font: 'Light Italic',    transform: 'uppercase'},
             fort_2:     {size: 16, font: 'Regular', icon: 'tower-color-bw', iconScale: 0.3,
                 filter: ['all', ['==', 'type', 'fort_2'], ['==', 'ruin', false]],
                 layout: {textOffset: [0, -2], textAnchor: 'bottom'},
-                paint:  {iconTranslate: [0, 0]}},
+                paint:  {iconTranslate: [0, 0], "text-color": '#ccc'}},
             small_city: {size: 16, font: 'Semibold', icon: 'city-color-bw', iconScale: 0.3,
                 layout: {textOffset: [0, -2], textAnchor: 'bottom'},
-                paint:  {iconTranslate: [0, 0]}},
+                paint:  {iconTranslate: [0, 0], "text-color": '#aaa'}},
             fort_1:     {size: 16, font: 'Regular', icon: 'tower-color-bw', iconScale: 0.45,
                 filter: ['all', ['==', 'type', 'fort_1'], ['==', 'ruin', false]],
                 layout: {textOffset: [0, -2], textAnchor: 'bottom'},
                 paint:  {iconTranslate: [0, 0]}},
             large_city: {size: 18, font: 'Bold', transform: 'uppercase', icon: 'city-color-bw', iconScale: 0.37,
                 layout: {textOffset: [0, -2], textAnchor: 'bottom'},
-                paint:  {iconTranslate: [0, 0]}},
+                paint:  {iconTranslate: [0, 0], "text-color": '#aaa'}},
             region_1:   {size: 22, font: 'Light Italic',    transform: 'uppercase',
-                layout: {'icon-allow-overlap': true, 'text-allow-overlap': true},
-                paint:  {'text-opacity': 0.65}},
-            sea_2:      {size: 22, font: 'Italic'},
-            sea_1:      {size: 24, font: 'Semibold Italic', transform: 'uppercase'},
-            continent:  {size: 26, font: 'Extra Bold',      transform: 'uppercase'}
+                layout: {'icon-allow-overlap': true, 'text-allow-overlap': true}},
+            sea_2:      {size: 22, font: 'Italic', paint: {"text-color": '#bbb'}},
+            sea_1:      {size: 24, font: 'Semibold Italic', transform: 'uppercase', paint: {"text-color": '#bbb'}},
+            continent:  {size: 26, font: 'Extra Bold',      transform: 'uppercase', paint: {"text-color": '#bbb'}}
         }
 
         _.each(locationLayerConfigs, (locationLayerConfig, id) => {
@@ -558,5 +602,8 @@ class Map {
     getObjectId() {
         this.lastObjectId++
         return window.lastObjectId
+    }
+
+    showFeatureInfo() {
     }
 }
