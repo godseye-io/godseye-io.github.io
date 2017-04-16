@@ -5,7 +5,7 @@ html, body {
 
 body {
     overflow-x: auto;
-    overflow-y: auto;
+    overflow-y: hidden;
 }
 
 #map {
@@ -112,4 +112,8 @@ body {
     top: 107px;
     left: 13px;
     cursor: pointer;
+}
+
+.mapboxgl-ctrl-attrib {
+    display: none !important;
 }

@@ -183,7 +183,7 @@ class Map {
 
                 // Calculate target size of popup
                 const normalSize = 543
-                let size = Math.min(normalSize, screen.width - 60, screen.height - 60)
+                let size = Math.min(normalSize, window.innerWidth - 60, window.innerHeight - 60)
 
                 // On small screens, force the popup to the center
                 if (size < normalSize) {
@@ -191,7 +191,7 @@ class Map {
                     $(popup._container).addClass('popup-center')
 
                     // Set the offsets manually to center it on the screen
-                    $(popup._container).css({top: (screen.height - size) / 2, left: (screen.width - size) / 2})
+                    $(popup._container).css({top: (window.innerHeight - size) / 2, left: (window.innerWidth - size) / 2})
 
                     // Restrict content height
                     $(popup._container).find('.wiki-content-wrapper').css({height: (394/normalSize) * size})
