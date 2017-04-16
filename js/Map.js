@@ -4,6 +4,9 @@ class Map {
 
         this.lastObjectId = -1
 
+        let layers = this.buildLayers()
+        this.originalLayers = _.cloneDeep(layers)
+
         this.map = new mapboxgl.Map({
             container: 'map',
             // minZoom: 2,
@@ -28,7 +31,7 @@ class Map {
                         }
                     }
                 },
-                layers: this.buildLayers()
+                layers: layers
             }
         })
 
@@ -47,29 +50,71 @@ class Map {
     }
 
     addLayerSwitcher() {
-        let layers = {
-            Roads:     'road',
-            Forests:   'forest',
-            Swamps:    'swamp',
-            Mountains: 'mountain',
-            Continents: 'continent'
-            // CitySource:   'cities'
-        }
+        let options = [
+            {title: 'Roads',     layer: 'road',     selected: true, icon: false},
+            {title: 'Forests',   layer: 'forest',   selected: true, icon: false},
+            {title: 'Swamps',    layer: 'swamp',    selected: true, icon: false},
+            {title: 'Mountains', layer: 'mountain', selected: true, icon: false},
+            {title: 'Regions', selected: true, icon: false, expanded: true, children: [
+                {title: 'Continents', layer: 'continent',  selected: true, icon: false},
+                {title: 'Major',      layer: 'region_1',   selected: true, icon: false},
+                {title: 'Minor',      layer: 'region_2',   selected: true, icon: false},
+                {title: 'Local',      layer: 'region_3',   selected: true, icon: false}
+            ]},
+            {title: 'Seas', selected: true, icon: false, expanded: true, children: [
+                {title: 'Major',      layer: 'sea_1',      selected: true, icon: false},
+                {title: 'Minor',      layer: 'sea_2',      selected: true, icon: false}
+            ]},
+            {title: 'Castles', selected: true, icon: false, expanded: true, children: [
+                {title: 'Major',      layer: 'fort_1',     selected: true, icon: false},
+                {title: 'Minor',      layer: 'fort_2',     selected: true, icon: false},
+                {title: 'Holdfasts',  layer: 'fort_3',     selected: true, icon: false}
+            ]},
+            {title: 'Cities', selected: true, icon: false, expanded: true, children: [
+                {title: 'Major',      layer: 'large_city', selected: true, icon: false},
+                {title: 'Minor',      layer: 'small_city', selected: true, icon: false},
+                {title: 'Villages',   layer: 'town',       selected: true, icon: false}
+            ]},
+            {title: 'Ruins',    layers: ['town_ruin', 'fort_ruin'], selected: true, icon: false},
+            {title: 'The Wall', layer: 'wall-extrusion',            selected: true, icon: false}
+        ]
 
-        let $panel = $('#layer-switcher .panel-body')
+        let $panel = $('#layer-switcher .panel-body').empty()
+        let $tree  = $('<div>').addClass('layer-tree').appendTo($panel)
+        let layers = []
 
-        _.each(layers, (id, label) => {
-            $('<div>').addClass('layer-switcher-item').append(
-                $('<span>').text(label),
-                $('<input>').attr('layer-id', id).attr('type', 'checkbox').attr('checked', true).attr('data-toggle', 'toggle').attr('data-size', 'mini')
-            ).appendTo($panel)
+        $tree.fancytree({
+            checkbox: true,
+            selectMode: 3,
+            source: options,
+            click: (e, data) => {
+                data.node.toggleSelected()
+            },
+            select: $.proxy(function(event, data) {
+                let layersOn  = _($tree.data().uiFancytree.tree.getSelectedNodes()).map(n => n.data.layer || n.data.layers).chain().compact().flatten().value()
+                let layersOff = _.difference(layers, layersOn)
+
+                for (var i = 0; i < layersOn.length; i++) {
+                    let layer = this.map.getLayer(layersOn[i])
+
+                    // Restore original filter
+                    let originalFilter = _.find(this.originalLayers, {id: layer.id}).filter
+                    this.map.setFilter(layer.id, originalFilter)
+                }
+
+                for (var j = 0; j < layersOff.length; j++) {
+                    let layer = this.map.getLayer(layersOff[j])
+
+                    // Setting it to invisible doesn't show other layers' items that are hidden due to collision - need to add filter
+                    this.map.setFilter(layer.id, ['==', 'type', 'true-hidden-layer-hack'])
+                }
+
+                this.map._rerender()
+            }, this),
+            beforeExpand: () => false
         })
 
-        $panel.on('change', 'input[type="checkbox"]', e => {
-            let $input = $(e.target).closest('input')
-            let layer_id = $input.attr('layer-id')
-            this.map.setLayoutProperty(layer_id, 'visibility', $input.is(':checked') ? 'visible' : 'none')
-        })
+        layers = _($tree.data().uiFancytree.tree.getSelectedNodes()).map(n => n.data.layer || n.data.layers).chain().compact().flatten().value()
     }
 
     registerEvents() {
@@ -93,7 +138,7 @@ class Map {
         window.newLocations = []
 
         this.map.on('click', e => {
-            console.log(e.lngLat)
+            // console.log(e.lngLat)
             // let name = prompt()
             // if (!name) {return}
 

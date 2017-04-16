@@ -25,7 +25,9 @@ $.get('data/locations.json').then(locations => {
     })
 })
 
-showInfo()
+if (!window.location.host.includes('localhost')) {
+    showInfo()
+}
 
 $('.info-button').on('click', showInfo)
 

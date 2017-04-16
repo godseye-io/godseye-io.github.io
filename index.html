@@ -15,7 +15,8 @@
         <link href='js/lib/mapbox/mapbox-gl.css' rel='stylesheet' />
         <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.fancytree/2.22.0/skin-win7/ui.fancytree.min.css">
+
         <!-- Site styles-->
         <link rel="stylesheet" href="css/index.css">
     </head>
@@ -28,12 +29,14 @@
             <i class="fa fa-info-circle fa-2x fa-inverse" aria-hidden="true"></i>
         </div>
 
-        <div id="layer-switcher" class="panel panel-primary">
+        <div id="layer-switcher" class="panel panel-default">
             <div class="panel-heading">
-                <h3 class="panel-title">Layers</h3>
+                <h3 class="panel-title" data-toggle="collapse" href="#layer-switcher-body">Layers</h3>
             </div>
-            <div class="panel-body"></div>
+            <div class="panel-body collapse" id="layer-switcher-body"></div>
         </div>
+
+        <div id="version">0.0.1</div>
 
         <template id="app-info-template">
             <h3>Introduction</h3>
@@ -70,11 +73,12 @@
         <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/superagent/3.5.2/superagent.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js'></script>
+        <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js" integrity="sha256-VazP97ZCwtekAsvgPBSUwPFKdrwD3unUfSGVYrahUqU=" crossorigin="anonymous"></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.fancytree/2.22.0/jquery.fancytree.min.js'></script>
 
         <!--/*<script src='threebox/src/three64.js'></script>*/-->
         <!--/*<script src='threebox/src/Threebox.js'></script>*/-->
-        
-        
+
         <!-- Site logic -->
         <script src="js/Map.js"></script>
         <script src="js/index.js"></script>

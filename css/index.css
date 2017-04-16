@@ -13,11 +13,33 @@ body {
     height: 100%;
 }
 
+#version {
+    position: absolute;
+    right: 5px;
+    bottom: 0px;
+    color: #777;
+    font-size: 10px;
+}
+
+.mapboxgl-ctrl-top-left .mapboxgl-ctrl {
+    display: flex;
+}
+
 #layer-switcher {
     position: absolute;
-    right: 10px;
-    top: 10px;
-    width: 140px;
+    left: 10px;
+    top: 50px;
+    width: 119px;
+}
+
+#layer-switcher .panel-heading {
+    height: 20px;
+    text-align: center;
+    padding-top: 0px;
+}
+
+#layer-switcher .panel-body {
+    padding: 0;
 }
 
 .layer-switcher-item {
@@ -27,6 +49,46 @@ body {
 
 .layer-switcher-item .toggle {
     float: right;    
+}
+
+.fancytree-container {
+    border: none !important;
+}
+
+#layer-switcher .fancytree-expander,
+#layer-switcher .fancytree-checkbox {
+    display: none;
+}
+
+#layer-switcher .fancytree-title {
+    border: none;
+    background: none !important;
+    font-style: normal !important;
+}
+
+#layer-switcher .fancytree-has-children:not(.fancytree-partsel):not(.fancytree-selected) .fancytree-title {
+    /*color: red;*/
+    opacity: 0.25;
+}
+
+#layer-switcher .fancytree-has-children.fancytree-partsel:not(.fancytree-selected) .fancytree-title {
+    /*color: orange;*/
+    opacity: 0.55;
+}
+
+#layer-switcher .fancytree-has-children.fancytree-partsel.fancytree-selected .fancytree-title {
+    /*color: green;*/
+    opacity: 1;
+}
+
+#layer-switcher :not(.fancytree-has-children):not(.fancytree-selected) .fancytree-title {
+    /*color: red;*/
+    opacity: 0.25;
+}
+
+#layer-switcher :not(.fancytree-has-children).fancytree-selected .fancytree-title {
+    /*color: green;*/
+    opacity: 1;
 }
 
 .marker {
@@ -109,8 +171,8 @@ body {
 
 .info-button {
     position: absolute;
-    top: 107px;
-    left: 13px;
+    top: 11px;
+    left: 106px;
     cursor: pointer;
 }
 
