@@ -640,11 +640,12 @@
                 ]
             },
             "properties": {
-                "name": "Oakenshield",
+                "name": "Oakenshield (Wall)",
                 "type": "fort_2",
                 "ruin": true,
-                "wiki_html": "<dl><dd><i>For the abandoned castle of the Night's Watch along the Wall, see Oakenshield (Wall).</i></dd></dl><p><b>Oakenshield</b> is one of the Shield Islands in the Reach. The easternmost of the isles, it lies near the mouth of the river Mander. Lord Hewett's Town, the seat of House Hewett, is found on the island.</p>\n<br>",
-                "wiki_image": "https://awoiaf.westeros.org/images/thumb/8/89/The_Reach.png/156px-The_Reach.png"
+                "wiki_name": "Oakenshield (Wall)",
+                "wiki_html": "<dl><dd><i>Oakenshield is also the name of one of the four islands that make up the Shield Islands.</i></dd></dl><p><b>Oakenshield</b> is an abandoned castle along the Wall belonging to  the Night's Watch. Castle Black lies immediately to its west. Next along the Wall to the east is Woodswatch-by-the-Pool.</p>\n<br>",
+                "wiki_image": "https://awoiaf.westeros.org/images/thumb/f/f3/The_North.png/185px-The_North.png"
             }
         },
         {
