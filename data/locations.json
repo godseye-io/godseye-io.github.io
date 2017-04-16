@@ -3795,9 +3795,11 @@
             },
             "properties": {
                 "name": "Wyl",
+                "wiki_name": "Wyl (castle)",
                 "type": "fort_2",
                 "ruin": false,
-                "wiki_html": "<p><b>Wyl</b> can refer to:\n</p>"
+                "wiki_html": "<p><b>Wyl</b> is the seat of House Wyl in Dorne. It is located east of the Boneway at the mouth of the Wyl river at the Sea of Dorne.</p>",
+                "wiki_image": "https://awoiaf.westeros.org/images/thumb/f/f5/Dorne.png/200px-Dorne.png"
             }
         },
         {
