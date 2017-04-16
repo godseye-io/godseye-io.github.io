@@ -24,3 +24,25 @@ $.get('data/locations.json').then(locations => {
         $('[data-toggle=toggle]').bootstrapToggle()
     })
 })
+
+showInfo()
+
+$('.info-button').on('click', showInfo)
+
+function showInfo() {
+    bootbox.dialog({
+        message: $('<div>').append(
+            $('#app-info-template').clone().html()
+        ).html(),
+        onEscape: true,
+        buttons: {
+            ok: {
+                label: 'Neat',
+                className: 'btn-success'
+            }
+        },
+        callback: result => {
+            console.log(result)
+        }
+    })
+}

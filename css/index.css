@@ -99,3 +99,10 @@ body {
     line-height: 1.0;
     font-family: 'Bilbo Swash Caps', cursive;
 }
+
+.info-button {
+    position: absolute;
+    top: 107px;
+    left: 13px;
+    cursor: pointer;
+}

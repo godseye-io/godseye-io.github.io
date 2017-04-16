@@ -14,13 +14,19 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
         <link href='js/lib/mapbox/mapbox-gl.css' rel='stylesheet' />
         <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         
         <!-- Site styles-->
         <link rel="stylesheet" href="css/index.css">
     </head>
     <body>
         <div id="map"></div>
+
         <pre id='info'></pre>
+
+        <div class="info-button">
+            <i class="fa fa-info-circle fa-2x fa-inverse" aria-hidden="true"></i>
+        </div>
 
         <div id="layer-switcher" class="panel panel-primary">
             <div class="panel-heading">
@@ -28,6 +34,27 @@
             </div>
             <div class="panel-body"></div>
         </div>
+
+        <template id="app-info-template">
+            <h3>Introduction</h3>
+            <p>This is an early alpha of <span class="appname">Planetos</span>. It's not quite ready for primetime, so please refrain from sharing it for now.</p>
+            <p>If you have any corrections, suggestions, bug reports, or other feedback, please let me know on Reddit at <a target="new" href="https://www.reddit.com/message/compose?to=ser_dunk_the_lunk&subject=Planetos%20feedback">/u/ser_dunk_the_lunk</a>.</p>
+
+            <h3>Credits</h3>
+            <p>Map source data and locations courtesy of <a target="new" href="https://atlasoficeandfireblog.wordpress.com/">Adam Whitehead</a>.</p>
+            <p>Location information courtesy of <a target="new" href="http://awoiaf.westeros.org">A Wiki of Ice and Fire</a> via <a target="new" href="https://creativecommons.org/licenses/by-sa/3.0/">Creative Commons</a>.</p>
+
+            Various textures:
+
+            <ul>
+                <li>Ocean texture      - Copyright: <a target="new" href="https://www.123rf.com/profile_incomible"            >incomible / 123RF Stock Photo </a></li>
+                <li>Grass texture      - Copyright: <a target="new" href="https://www.123rf.com/profile_amiloslava"           >amiloslava / 123RF Stock Photo</a></li>
+                <li>Forest texture     - Copyright: <a target="new" href="https://www.123rf.com/profile_artqu"                >artqu / 123RF Stock Photo     </a></li>
+                <li>Swamp texture      - Copyright: <a target="new" href="https://www.123rf.com/profile_nikifiva"             >nikifiva / 123RF Stock Photo  </a></li>
+                <li>Background texture - Copyright: <a target="new" href="https://www.123rf.com/profile_roystudio"            >roystudio / 123RF Stock Photo </a></li>
+                <li>Mountain texture   - Copyright: <a target="new" href="https://www.colourbox.com/search/find?supplier=2088">2088 / colourbox              </a></li>
+            </ul>
+        </template>
 
         <!-- JS libraries -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"    ></script>
@@ -37,9 +64,11 @@
         <script src="https://gitcdn.github.io/bootstrap-toggle/2.2.2/js/bootstrap-toggle.min.js"></script>
         <script src='https://npmcdn.com/@turf/turf/turf.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/superagent/3.5.2/superagent.min.js'></script>
+        <script src='https://cdnjs.cloudflare.com/ajax/libs/bootbox.js/4.4.0/bootbox.min.js'></script>
+
         <!--/*<script src='threebox/src/three64.js'></script>*/-->
         <!--/*<script src='threebox/src/Threebox.js'></script>*/-->
-
+        
         
         <!-- Site logic -->
         <script src="js/Map.js"></script>
