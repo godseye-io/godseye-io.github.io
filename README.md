@@ -1,5 +1,8 @@
 # planetos
 
+Map vector data and locations courtesy of [Adam Whitehead](https://atlasoficeandfireblog.wordpress.com/).
+
+Location information courtesy of [A Wiki of Ice and Fire](http://awoiaf.westeros.org).
 
 - Ocean texture      - Copyright: [incomible / 123RF Stock Photo ](https://www.123rf.com/profile_incomible)
 - Grass texture      - Copyright: [amiloslava / 123RF Stock Photo](https://www.123rf.com/profile_amiloslava)
