@@ -176,10 +176,34 @@ class Map {
                     </div>
                 `
 
-                new mapboxgl.Popup({offset: [0, -30]})
+                let popup = new mapboxgl.Popup({offset: [0, -30]})
                     .setLngLat(center)
                     .setHTML(html)
                     .addTo(this.map)
+
+                // Calculate target size of popup
+                const normalSize = 543
+                let size = Math.min(normalSize, screen.width - 60, screen.height - 60)
+
+                // On small screens, force the popup to the center
+                if (size < normalSize) {
+                    // Add CSS class for absolute positioning and to override Mapbox's translation and flex-direction logic
+                    $(popup._container).addClass('popup-center')
+
+                    // Set the offsets manually to center it on the screen
+                    $(popup._container).css({top: (screen.height - size) / 2, left: (screen.width - size) / 2})
+
+                    // Restrict content height
+                    $(popup._container).find('.wiki-content-wrapper').css({height: (394/normalSize) * size})
+                    
+                    // Adjust content padding
+                    let paddingY = ((85/normalSize) * size) + 'px'
+                    let paddingX = ((25/normalSize) * size) + 'px'
+                    $(popup._container).find('.mapboxgl-popup-content').css({maxWidth: size, maxHeight: size, padding: `${paddingY} ${paddingX}`})
+
+                    // Shrink down images
+                    $(popup._container).find('.wiki-image').css({maxWidth: (150/normalSize) * size, maxHeight: (150/normalSize) * size})
+                }
             }
         })
 

@@ -64,6 +64,13 @@ body {
 .mapboxgl-popup {
     height: 543px;
     width: 543px;
+    z-index: 1000;
+}
+
+.mapboxgl-popup.popup-center {
+    transform: initial !important;
+    position: absolute;
+    flex-direction: initial;
 }
 
 .mapboxgl-popup-content {
