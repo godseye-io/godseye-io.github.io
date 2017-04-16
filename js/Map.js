@@ -165,6 +165,10 @@ class Map {
 
                 let html = features[0].properties.wiki_html
 
+                // Strip out any detail list (<dl>) elements - they're used for disambiguation info at top of wiki articles
+                let withoutDl = _($(html)).chain().filter(el => el.tagName != 'DL').value()
+                html = $('<div>').append(withoutDl).html()
+
                 let imgHtml = features[0].properties.wiki_image && `<img class="wiki-image" src="${features[0].properties.wiki_image}" />`
 
                 html = `
