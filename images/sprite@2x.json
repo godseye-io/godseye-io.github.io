@@ -1,0 +1,86 @@
+{
+    "background": {
+        "x": 0,
+        "y": 0,
+        "width": 450,
+        "height": 450,
+        "pixelRatio": 1
+    },
+    "city-color-bw": {
+        "x": 420,
+        "y": 450,
+        "width": 202,
+        "height": 142,
+        "pixelRatio": 1
+    },
+    "forest": {
+        "x": 706,
+        "y": 0,
+        "width": 128,
+        "height": 128,
+        "pixelRatio": 1
+    },
+    "grass": {
+        "x": 770,
+        "y": 256,
+        "width": 64,
+        "height": 64,
+        "pixelRatio": 1
+    },
+    "ice": {
+        "x": 450,
+        "y": 0,
+        "width": 256,
+        "height": 256,
+        "pixelRatio": 1
+    },
+    "land": {
+        "x": 0,
+        "y": 450,
+        "width": 256,
+        "height": 256,
+        "pixelRatio": 1
+    },
+    "mountains": {
+        "x": 706,
+        "y": 320,
+        "width": 32,
+        "height": 32,
+        "pixelRatio": 1
+    },
+    "swamp": {
+        "x": 706,
+        "y": 256,
+        "width": 64,
+        "height": 64,
+        "pixelRatio": 1
+    },
+    "tower-color-bw": {
+        "x": 256,
+        "y": 450,
+        "width": 164,
+        "height": 178,
+        "pixelRatio": 1
+    },
+    "town-color-bw": {
+        "x": 0,
+        "y": 706,
+        "width": 147,
+        "height": 107,
+        "pixelRatio": 1
+    },
+    "village": {
+        "x": 450,
+        "y": 256,
+        "width": 240,
+        "height": 140,
+        "pixelRatio": 1
+    },
+    "water4": {
+        "x": 706,
+        "y": 128,
+        "width": 128,
+        "height": 128,
+        "pixelRatio": 1
+    }
+}
