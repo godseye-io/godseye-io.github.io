@@ -15,7 +15,7 @@ class Map {
             style: {
                 version: 8,
                 glyphs: "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf?key=lTLRtimQtgugsPltAQTT",
-                sprite: window.location.origin + '/images/sprite',
+                sprite: window.location.href.replace(window.location.search, '') + '/images/sprite',
                 zoom: 4,
                 minZoom: 4,
                 maxZoom: 10,

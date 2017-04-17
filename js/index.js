@@ -27,7 +27,7 @@ $.get('data/locations.json').then(locations => {
 
         $('.share-map').on('click', () => {
             map.save().then(id => {
-                let url = _.trimEnd(window.location.origin, '/') + '?gist=' + id
+                let url = _.trimEnd(window.location.href.replace(window.location.search, ''), '/') + '?gist=' + id
 
                 let $el = bootbox.prompt({
                     title: 'Sharing Link',
