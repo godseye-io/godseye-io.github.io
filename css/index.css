@@ -91,6 +91,12 @@ body {
     opacity: 1;
 }
 
+.share-map {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+}
+
 .marker {
     display: block;
     border: none;

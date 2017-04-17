@@ -1,6 +1,7 @@
 class Map {
     constructor(config) {
         mapboxgl.accessToken = 'no-token'
+        this.config = config
 
         this.lastObjectId = -1
 
@@ -14,7 +15,7 @@ class Map {
             style: {
                 version: 8,
                 glyphs: "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf?key=lTLRtimQtgugsPltAQTT",
-                sprite: window.location.href + '/images/sprite',
+                sprite: window.location.origin + '/images/sprite',
                 zoom: 4,
                 minZoom: 4,
                 maxZoom: 10,
@@ -40,6 +41,10 @@ class Map {
 
         this.map.on('load', e => {
             this.registerEvents()
+
+            if (this.config && this.config.gist) {
+                this.load(this.config.gist)
+            }
         })
 
         return this
@@ -95,18 +100,11 @@ class Map {
                 let layersOff = _.difference(layers, layersOn)
 
                 for (var i = 0; i < layersOn.length; i++) {
-                    let layer = this.map.getLayer(layersOn[i])
-
-                    // Restore original filter
-                    let originalFilter = _.find(this.originalLayers, {id: layer.id}).filter
-                    this.map.setFilter(layer.id, originalFilter)
+                    this.setLayerVisibility(layersOn[i], true)
                 }
 
                 for (var j = 0; j < layersOff.length; j++) {
-                    let layer = this.map.getLayer(layersOff[j])
-
-                    // Setting it to invisible doesn't show other layers' items that are hidden due to collision - need to add filter
-                    this.map.setFilter(layer.id, ['==', 'type', 'true-hidden-layer-hack'])
+                    this.setLayerVisibility(layersOff[j], false)
                 }
 
                 this.map._rerender()
@@ -677,6 +675,92 @@ class Map {
         return window.lastObjectId
     }
 
-    showFeatureInfo() {
+    getLayerVisibility(id) {
+        let filter = map.map.getLayer(id).filter
+
+        if (filter && filter.length == 3 && filter[2] == 'true-hidden-layer-hack') {
+            return false
+        }
+
+        return true
+    }
+
+    setLayerVisibility(id, visible) {
+        if (visible) {
+            let originalFilter = _.find(this.originalLayers, {id: id}).filter
+            this.map.setFilter(id, originalFilter)
+        }
+        else {
+            // Setting it to invisible doesn't show other layers' items that are hidden due to collision - need to set filter
+            this.map.setFilter(id, ['==', 'type', 'true-hidden-layer-hack'])
+        }
+    }
+
+    getVisibleLayers() {
+        let layers = _(map.map.getStyle().layers).chain()
+            .map('id')
+            .filter(this.getLayerVisibility)
+            .value()
+
+        return layers
+    }
+
+    setVisibleLayers(layers) {
+        _.each(this.originalLayers, layer => {
+            this.setLayerVisibility(layer.id, layers.includes(layer.id))
+        })
+    }
+
+    load(gist_id) {
+        $.ajax({
+            url: 'https://api.github.com/gists/' + gist_id,
+            method: 'GET',
+            success: function(result) {
+                let data = JSON.parse(result.files['map.json'].content)
+
+                map.map.setBearing(data.map_bearing)
+                map.map.setPitch  (data.map_pitch  )
+                map.map.setZoom   (data.map_zoom   )
+                map.map.setCenter (data.map_center )
+
+                map.setVisibleLayers(data.layers)
+            }
+        })
+    }
+
+    save() {
+        return new Promise((resolve, reject) => {
+            let json = {
+                planetos_version: window.planetos_version,
+                map_bearing:      map.map.getBearing(),
+                map_pitch:        map.map.getPitch(),
+                map_zoom:         map.map.getZoom(),
+                map_center:       map.map.getCenter(),
+                layers:           map.getVisibleLayers()
+            }
+
+            $.ajax({
+                url: 'https://api.github.com/gists',
+                method: 'POST',
+                headers: {
+                    Accept: 'application/json'
+                },
+                data: JSON.stringify({
+                    description: 'Custom Planetos map (aiwebb.github.io/planetos)',
+                    public: true,
+                    files: {
+                        'map.json': {
+                            content: JSON.stringify(json)
+                        }
+                    }
+                }),
+                failure: function(err) {
+                    reject(err)
+                },
+                success: function(result) {
+                    resolve(result.id)
+                }
+            })
+        })
     }
 }

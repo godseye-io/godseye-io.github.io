@@ -16,12 +16,31 @@
 // var bounds = [[0,0], [1000,1000]];
 // var image = L.imageOverlay('uqm_map_full.png', bounds).addTo(map);
 
+window.queryParams = getQueryParams()
+
 $.get('data/locations.json').then(locations => {
     $.get('data/world-map-4326-20.json').then(world => {
         window.locations = locations
-        window.map = new Map({locations: locations, world: world})
+        window.map = new Map({locations: locations, world: world, gist: queryParams.gist || null})
 
         $('[data-toggle=toggle]').bootstrapToggle()
+
+        $('.share-map').on('click', () => {
+            map.save().then(id => {
+                let url = _.trimEnd(window.location.origin, '/') + '?gist=' + id
+
+                let $el = bootbox.prompt({
+                    title: 'Sharing Link',
+                    value: url,
+                    callback: () => {}
+                })
+
+                $el.find('.btn[data-bb-handler=cancel]').remove()
+
+                let input = $el.find('input[type=text]').get(0)
+                input.setSelectionRange(0, input.value.length)
+            })
+        })
     })
 })
 
@@ -47,4 +66,17 @@ function showInfo() {
             console.log(result)
         }
     })
+}
+
+function getQueryParams() {
+    let query = window.location.search
+    if (!query) {return {}}
+
+    return (/^[?#]/.test(query) ? query.slice(1) : query)
+        .split('&')
+        .reduce((params, param) => {
+            let [key, value] = param.split('=')
+            params[key] = value ? decodeURIComponent(value.replace(/\+/g, ' ')) : ''
+            return params;
+        }, {})
 }
