@@ -15,7 +15,10 @@ class Map {
             style: {
                 version: 8,
                 glyphs: "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf?key=lTLRtimQtgugsPltAQTT",
-                sprite: window.location.href.replace(window.location.search, '') + '/images/sprite',
+                sprite:
+                    _.trimEnd(window.location.origin, '/') + '/' + 
+                    _.trimEnd(window.location.pathname.replace('index.html', ''), '/') + '/' +
+                    'images/sprite',
                 zoom: 4,
                 minZoom: 4,
                 maxZoom: 10,
