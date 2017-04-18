@@ -121,6 +121,20 @@ body {
     margin-top: 10px;
 }
 
+.map-title {
+    background-image: url(../images/scroll-banner.png);
+    position: absolute;
+    top: 10px;
+    left: calc(50% - 303px);
+    width: 606px;
+    height: 53px;
+    font-family: 'Bilbo Swash Caps', cursive;
+    font-size: 36px;
+    text-align: center;
+    vertical-align: middle;
+    line-height: 55px;
+}
+
 /***************
 *              *
 *  WIKI POPUP  *

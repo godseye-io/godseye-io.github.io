@@ -82,9 +82,9 @@ $.get('data/locations.json').then(locations => {
                             let $modal = $(e.target).closest('.modal')
 
                             map.save({
-                                title:       $modal.find('.sharing-title'      ),
-                                author:      $modal.find('.sharing-author'     ),
-                                description: $modal.find('.sharing-description'),
+                                title:       $modal.find('.sharing-title'      ).val(),
+                                author:      $modal.find('.sharing-author'     ).val(),
+                                description: $modal.find('.sharing-description').val(),
                                 timestamp:   moment.now()
                             }).then(id => {
                                 let url     = _.trimEnd(window.location.origin, '/') + '/'

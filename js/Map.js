@@ -39,6 +39,8 @@ class Map {
             }
         })
 
+        this.title = ''
+
         this.addControls()
         this.addLayerSwitcher()
 
@@ -727,6 +729,9 @@ class Map {
                 map.map.setCenter (data.map_center )
 
                 map.setVisibleLayers(data.layers)
+
+                map.title = data.title
+                $('.map-title').text(map.title)
             }
         })
     }
