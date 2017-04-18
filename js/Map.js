@@ -731,16 +731,17 @@ class Map {
         })
     }
 
-    save() {
+    save(json) {
         return new Promise((resolve, reject) => {
-            let json = {
+            json = json || {}
+            Object.assign(json, {
                 planetos_version: window.planetos_version,
                 map_bearing:      map.map.getBearing(),
                 map_pitch:        map.map.getPitch(),
                 map_zoom:         map.map.getZoom(),
                 map_center:       map.map.getCenter(),
                 layers:           map.getVisibleLayers()
-            }
+            })
 
             $.ajax({
                 url: 'https://api.github.com/gists',

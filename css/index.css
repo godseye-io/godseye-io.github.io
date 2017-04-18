@@ -1,3 +1,8 @@
+/*********
+*        *
+*  PAGE  *
+*        *
+*********/
 html, body {
     width: 100%;
     height: 100%;
@@ -8,9 +13,36 @@ body {
     overflow-y: hidden;
 }
 
+/********
+*       *
+*  MAP  *
+*       *
+********/
 #map {
     width: 100%;
     height: 100%;
+}
+
+.mapboxgl-ctrl-top-left .mapboxgl-ctrl {
+    display: flex;
+}
+
+.marker {
+    display: block;
+    border: none;
+    /*border-radius: 50%;*/
+    cursor: pointer;
+    padding: 0;
+    width:  50px;
+    height: 50px;
+    background-size: contain;
+}
+
+.info-button {
+    position: absolute;
+    top: 11px;
+    left: 106px;
+    cursor: pointer;
 }
 
 #version {
@@ -21,10 +53,11 @@ body {
     font-size: 10px;
 }
 
-.mapboxgl-ctrl-top-left .mapboxgl-ctrl {
-    display: flex;
-}
-
+/*******************
+*                  *
+*  LAYER SWITCHER  *
+*                  *
+*******************/
 #layer-switcher {
     position: absolute;
     left: 10px;
@@ -48,11 +81,7 @@ body {
 }
 
 .layer-switcher-item .toggle {
-    float: right;    
-}
-
-.fancytree-container {
-    border: none !important;
+    float: right;
 }
 
 #layer-switcher .fancytree-expander,
@@ -66,69 +95,37 @@ body {
     font-style: normal !important;
 }
 
-#layer-switcher .fancytree-has-children:not(.fancytree-partsel):not(.fancytree-selected) .fancytree-title {
-    /*color: red;*/
-    opacity: 0.25;
-}
+#layer-switcher .fancytree-has-children:not(.fancytree-partsel):not(.fancytree-selected) .fancytree-title {opacity: 0.25;}
+#layer-switcher .fancytree-has-children.fancytree-partsel:not(.fancytree-selected) .fancytree-title {opacity: 0.55;}
+#layer-switcher .fancytree-has-children.fancytree-partsel.fancytree-selected .fancytree-title {opacity: 1;}
+#layer-switcher :not(.fancytree-has-children):not(.fancytree-selected) .fancytree-title {opacity: 0.25;}
+#layer-switcher :not(.fancytree-has-children).fancytree-selected .fancytree-title {opacity: 1;}
 
-#layer-switcher .fancytree-has-children.fancytree-partsel:not(.fancytree-selected) .fancytree-title {
-    /*color: orange;*/
-    opacity: 0.55;
-}
-
-#layer-switcher .fancytree-has-children.fancytree-partsel.fancytree-selected .fancytree-title {
-    /*color: green;*/
-    opacity: 1;
-}
-
-#layer-switcher :not(.fancytree-has-children):not(.fancytree-selected) .fancytree-title {
-    /*color: red;*/
-    opacity: 0.25;
-}
-
-#layer-switcher :not(.fancytree-has-children).fancytree-selected .fancytree-title {
-    /*color: green;*/
-    opacity: 1;
-}
-
+/************
+*           *
+*  SHARING  *
+*           *
+************/
 .share-map {
     position: absolute;
     top: 10px;
     right: 10px;
 }
 
-.marker {
-    display: block;
-    border: none;
-    /*border-radius: 50%;*/
-    cursor: pointer;
-    padding: 0;
-    width:  50px;
-    height: 50px;
-    background-size: contain;
-}
-
-.stark {
-    background-image: url(images/stark.png); 
-}
-
-#info {
-    /*display: block;*/
-    display: none;
-    position: absolute;
-    top: 0;
-    left: 35%;
-    margin: 0px auto;
-    width: 20%;
-    padding: 10px;
-    border: none;
-    border-radius: 3px;
-    font-size: 12px;
+.sharing-instructions {
+    font-style: italic;
     text-align: center;
-    color: #222;
-    background: #fff;
 }
 
+.sharing-title, .sharing-author, .sharing-description {
+    margin-top: 10px;
+}
+
+/***************
+*              *
+*  WIKI POPUP  *
+*              *
+***************/
 .mapboxgl-popup {
     height: 543px;
     width: 543px;
@@ -151,8 +148,6 @@ body {
 }
 
 .mapboxgl-popup-content .wiki-image {
-    /*float: left; */
-    /*margin-right: 10px;*/
     margin-left: auto;
     margin-right: auto;
     display: table-cell;
@@ -175,13 +170,41 @@ body {
     font-family: 'Bilbo Swash Caps', cursive;
 }
 
-.info-button {
-    position: absolute;
-    top: 11px;
-    left: 106px;
-    cursor: pointer;
-}
-
+/*********
+*        *
+*  MISC  *
+*        *
+*********/
 .mapboxgl-ctrl-attrib {
     display: none !important;
+}
+
+.fancytree-container {
+    border: none !important;
+}
+
+/***********
+*          *
+*  UNUSED  *
+*          *
+***********/
+.stark {
+    background-image: url(images/stark.png);
+}
+
+#info {
+    /*display: block;*/
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 35%;
+    margin: 0px auto;
+    width: 20%;
+    padding: 10px;
+    border: none;
+    border-radius: 3px;
+    font-size: 12px;
+    text-align: center;
+    color: #222;
+    background: #fff;
 }
