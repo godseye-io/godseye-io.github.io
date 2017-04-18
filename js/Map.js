@@ -279,7 +279,7 @@ class Map {
             {id: 'swamp',    type: 'fill', source: 'world', paint: {'fill-color': '#d7e2b3', 'fill-pattern': 'swamp'}, filter: ['==', 'type', 'swamp'   ]},
             {id: 'road',     type: 'line', source: 'world',                                   filter: ['==', 'type', 'road'    ],
                 layout: {'line-cap': 'round', 'line-join': 'round'},
-                paint:  {'line-opacity': 0.9, 'line-color': '#333', 'line-width': 6}},
+                paint:  {'line-opacity': 0.9, 'line-color': '#151515', 'line-width': 6}},
             {
                 id: 'wall-extrusion',
                 type: 'fill-extrusion',
