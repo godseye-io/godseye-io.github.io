@@ -10,8 +10,9 @@ class Map {
 
         this.map = new mapboxgl.Map({
             container: 'map',
-            // minZoom: 2,
-            // zoom: 3,
+            zoom: 4,
+            minZoom: 4,
+            maxZoom: 10,
             style: {
                 version: 8,
                 glyphs: "https://fonts.openmaptiles.org/{fontstack}/{range}.pbf?key=lTLRtimQtgugsPltAQTT",
@@ -19,9 +20,6 @@ class Map {
                     _.trimEnd(window.location.origin, '/') + '/' + 
                     _.trimEnd(window.location.pathname.replace('index.html', ''), '/') + '/' +
                     'images/sprite',
-                zoom: 4,
-                minZoom: 4,
-                maxZoom: 10,
                 sources: {
                     "base":      {"type": "image", "url": "images/cities-overlay.png",      "coordinates": [[-28.74608909182468, 23.21466942878296], [28.74608909182468, 23.21466942878296], [28.74608909182468, -23.21466942878296], [-28.74608909182468, -23.21466942878296]]},
                     "reference": {"type": "image", "url": "images/reference-locations.png", "coordinates": [[-28.74608909182468, 23.21466942878296], [28.74608909182468, 23.21466942878296], [28.74608909182468, -23.21466942878296], [-28.74608909182468, -23.21466942878296]]},
@@ -792,7 +790,7 @@ class Map {
                 map.title = data.title
 
                 // Dumb hack to display map title on large-ish screens
-                if (window.innerWidth >= 1000) {
+                if (window.innerWidth >= 1000 && map.title) {
                     $('.map-title').css({display: 'block'})
                 }
             }
