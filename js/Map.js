@@ -10,6 +10,7 @@ class Map {
 
         this.map = new mapboxgl.Map({
             container: 'map',
+            preserveDrawingBuffer: true,
             zoom: 4,
             minZoom: 4,
             maxZoom: 10,
@@ -21,8 +22,8 @@ class Map {
                     _.trimEnd(window.location.pathname.replace('index.html', ''), '/') + '/' +
                     'images/sprite',
                 sources: {
-                    "base":      {"type": "image", "url": "images/cities-overlay.png",      "coordinates": [[-28.74608909182468, 23.21466942878296], [28.74608909182468, 23.21466942878296], [28.74608909182468, -23.21466942878296], [-28.74608909182468, -23.21466942878296]]},
-                    "reference": {"type": "image", "url": "images/reference-locations.png", "coordinates": [[-28.74608909182468, 23.21466942878296], [28.74608909182468, 23.21466942878296], [28.74608909182468, -23.21466942878296], [-28.74608909182468, -23.21466942878296]]},
+                    // "base":      {"type": "image", "url": "images/cities-overlay.png",      "coordinates": [[-28.74608909182468, 23.21466942878296], [28.74608909182468, 23.21466942878296], [28.74608909182468, -23.21466942878296], [-28.74608909182468, -23.21466942878296]]},
+                    // "reference": {"type": "image", "url": "images/reference-locations.png", "coordinates": [[-28.74608909182468, 23.21466942878296], [28.74608909182468, 23.21466942878296], [28.74608909182468, -23.21466942878296], [-28.74608909182468, -23.21466942878296]]},
                     "world":     {"type": "geojson", "data": config.world    },
                     "location":  {"type": "geojson", "data": config.locations},
                     "line": {
@@ -45,8 +46,8 @@ class Map {
         this.map.on('load', e => {
             this.registerEvents()
 
-            if (this.config && this.config.gist) {
-                this.load(this.config.gist)
+            if (this.config && this.config.map_id) {
+                this.load(this.config.map_id)
             }
         })
 
@@ -773,9 +774,9 @@ class Map {
         })
     }
 
-    load(gist_id) {
+    load(map_id) {
         $.ajax({
-            url: 'https://api.github.com/gists/' + gist_id,
+            url: 'https://api.github.com/gists/' + map_id,
             method: 'GET',
             success: function(result) {
                 let data = JSON.parse(result.files['map.json'].content)
@@ -788,6 +789,7 @@ class Map {
                 map.setVisibleLayers(data.layers)
 
                 map.title = data.title
+                $('.map-title').text(map.title)
 
                 // Dumb hack to display map title on large-ish screens
                 if (window.innerWidth >= 1000 && map.title) {
@@ -801,7 +803,7 @@ class Map {
         return new Promise((resolve, reject) => {
             json = json || {}
             Object.assign(json, {
-                planetos_version: window.planetos_version,
+                app_version:      window.app_version,
                 map_bearing:      map.map.getBearing(),
                 map_pitch:        map.map.getPitch(),
                 map_zoom:         map.map.getZoom(),
@@ -816,11 +818,11 @@ class Map {
                     Accept: 'application/json'
                 },
                 data: JSON.stringify({
-                    description: 'Custom Planetos map (aiwebb.github.io/planetos)',
+                    description: 'Gods Eye custom map (godseye.io)',
                     public: true,
                     files: {
                         'map.json': {
-                            content: JSON.stringify(json)
+                            content: JSON.stringify(json, null, '\t')
                         }
                     }
                 }),

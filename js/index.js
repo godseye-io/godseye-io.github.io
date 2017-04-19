@@ -16,102 +16,108 @@
 // var bounds = [[0,0], [1000,1000]];
 // var image = L.imageOverlay('uqm_map_full.png', bounds).addTo(map);
 
+window.api_version = '0.0.2'
+$('#version').text(window.api_version)
+
 window.queryParams = getQueryParams()
 
-$.get('data/locations.json').then(locations => {
-    $.get('data/world-map-4326-20.json').then(world => {
-        window.locations = locations
-        window.map = new Map({locations: locations, world: world, gist: queryParams.gist || null})
+Promise.all([
+    $.get('data/locations.json'),
+    $.get('data/world-map-4326-20.json')
+]).then(results => {
+    window.locations = results[0]
+    window.world     = results[1]
+    window.map       = new Map({locations: locations, world: world, map_id: queryParams.map_id || null})
 
-        $('[data-toggle=toggle]').bootstrapToggle()
+    $('[data-toggle=toggle]').bootstrapToggle()
 
-        $('.share-map').on('click', () => {
-            bootbox.dialog({
-                title: 'Share Map',
-                message: $('<div>').append(
-                        $('<div>'     ).addClass('sharing-instructions')
-                            .text('These are all optional - you can just skip to generating the link if you want.'),
-                        $('<input>'   ).addClass('form-control sharing-title'      ).attr('placeholder', 'Title'      ),
-                        $('<input>'   ).addClass('form-control sharing-author'     ).attr('placeholder', 'Author'     ),
-                        $('<textarea>').addClass('form-control sharing-description').attr('placeholder', 'Description')
-                    )
-                    .wrap($('<div>')).parent().html(),
-                buttons: {
-                    cancel: {
-                        label: 'Cancel'
-                    },
-                    // // Image generation off for now - issues with preserveDrawingBuffer not being set
-                    // image: {
-                    //     label: 'Generate Image',
-                    //     className: 'btn-default',
-                    //     callback: () => {
-                    //         map.map._rerender()
-                    //         // let ctx    = map.map.getCanvas().getContext("webgl", {preserveDrawingBuffer: true})
-                    //         let canvas = map.map.getCanvas()
+    $('.share-map').on('click', () => {
+        bootbox.dialog({
+            title: 'Share Map',
+            message: $('<div>').append(
+                    $('<div>'     ).addClass('sharing-instructions')
+                        .text('These are all optional - you can just skip to generating the link if you want.'),
+                    $('<input>'   ).addClass('form-control sharing-title'      ).attr('placeholder', 'Title'      ),
+                    $('<input>'   ).addClass('form-control sharing-author'     ).attr('placeholder', 'Author'     ),
+                    $('<textarea>').addClass('form-control sharing-description').attr('placeholder', 'Description')
+                )
+                .wrap($('<div>')).parent().html(),
+            buttons: {
+                cancel: {
+                    label: 'Cancel'
+                },
+                image: {
+                    label: 'Generate Image',
+                    className: 'btn-default',
+                    callback: () => {
+                        // Force a rerender
+                        map.map._rerender()
 
-                    //         let imgData = canvas.toDataURL({
-                    //             format: 'png',
-                    //             left:   0,
-                    //             top:    0,
-                    //             width:  canvas.width,
-                    //             height: canvas.height
-                    //         }).replace(/.*,/, '')
+                        let canvas = map.map.getCanvas()
+                        let ctx    = canvas.getContext('webgl')
 
-                    //         $.ajax({
-                    //             url: 'https://api.imgur.com/3/image',
-                    //             method: 'POST',
-                    //             headers: {
-                    //                 Authorization: 'Client-ID 79642fcadc44981',
-                    //                 Accept: 'application/json'
-                    //             },
-                    //             data: {
-                    //                 image: imgData,
-                    //                 type: 'base64'
-                    //             },
-                    //             success: function(result) {
-                    //                 let id = result.data.id
-                    //                 window.open('https://imgur.com/gallery/' + id, '_imgur')
-                    //             }
-                    //         })
-                    //     }
-                    // },
-                    link: {
-                        label: 'Generate Link',
-                        className: 'btn-primary',
-                        callback: e => {
-                            let $modal = $(e.target).closest('.modal')
+                        let imgData = canvas.toDataURL({
+                            format: 'png',
+                            left:   0,
+                            top:    0,
+                            width:  canvas.width,
+                            height: canvas.height
+                        }).replace(/.*,/, '')
 
-                            map.save({
-                                title:       $modal.find('.sharing-title'      ).val(),
-                                author:      $modal.find('.sharing-author'     ).val(),
-                                description: $modal.find('.sharing-description').val(),
-                                timestamp:   moment.now()
-                            }).then(id => {
-                                let url     = _.trimEnd(window.location.origin, '/') + '/'
-                                let subpath = _.trim(window.location.pathname.replace('index.html', ''), '/')
-
-                                if (subpath) {
-                                    url += subpath + '/'
-                                }
- 
-                                url += 'index.html?gist=' + id
-
-                                let $el = bootbox.prompt({
-                                    title: 'Sharing Link',
-                                    value: url,
-                                    callback: () => {}
-                                })
-
-                                $el.find('.btn[data-bb-handler=cancel]').remove()
-
-                                let input = $el.find('input[type=text]').get(0)
-                                input.setSelectionRange(0, input.value.length)
-                            })
-                        }
+                        $.ajax({
+                            url: 'https://api.imgur.com/3/image',
+                            method: 'POST',
+                            headers: {
+                                Authorization: 'Client-ID 79642fcadc44981',
+                                Accept: 'application/json'
+                            },
+                            data: {
+                                image: imgData,
+                                type: 'base64'
+                            },
+                            success: function(result) {
+                                let id = result.data.id
+                                window.open('https://imgur.com/gallery/' + id, '_imgur')
+                            }
+                        })
                     }
                 },
-                onEscape: true
-            })
+                link: {
+                    label: 'Generate Link',
+                    className: 'btn-primary',
+                    callback: e => {
+                        let $modal = $(e.target).closest('.modal')
+
+                        map.save({
+                            title:       $modal.find('.sharing-title'      ).val(),
+                            author:      $modal.find('.sharing-author'     ).val(),
+                            description: $modal.find('.sharing-description').val(),
+                            timestamp:   moment.now()
+                        }).then(id => {
+                            let url     = _.trimEnd(window.location.origin, '/')
+                            let subpath = _.trim(window.location.pathname.replace('index.html', ''), '/')
+
+                            if (subpath) {
+                                url += '/' + subpath
+                            }
+
+                            url += '?map_id=' + id
+
+                            let $el = bootbox.prompt({
+                                title: 'Sharing Link',
+                                value: url,
+                                callback: () => {}
+                            })
+
+                            $el.find('.btn[data-bb-handler=cancel]').remove()
+
+                            let input = $el.find('input[type=text]').get(0)
+                            input.setSelectionRange(0, input.value.length)
+                        })
+                    }
+                }
+            },
+            onEscape: true
         })
     })
 })
