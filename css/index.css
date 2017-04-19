@@ -157,8 +157,9 @@ body {
     overflow-y: scroll; 
     position: absolute;
     right: -17px;
-    padding-right: 34px;
+    padding-right: 40px;
     padding-top: 70px;
+    padding-left: 14px;
     top: 10px;
 }
 
@@ -167,6 +168,14 @@ body {
     margin-right: auto;
     display: table-cell;
     padding-bottom: 10px;
+}
+
+.popup-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
 }
 
 .wiki-desc {

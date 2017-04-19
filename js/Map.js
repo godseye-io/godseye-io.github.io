@@ -202,6 +202,10 @@ class Map {
     
     
         this.map.on('click', e => {
+            console.log({
+                lngLat: e.lngLat,
+                point: e.point
+            })
             var features = this.map.queryRenderedFeatures(e.point)
 
             if (features.length && features[0].properties.wiki_html) {
@@ -244,6 +248,8 @@ class Map {
         let paddingY = ((85/normalSize) * size) + 'px'
         let paddingX = ((25/normalSize) * size) + 'px'
 
+        let $popupBackdrop = $('<div>').addClass('popup-backdrop').appendTo($('body'))
+
         let $popup = $('<div>')
             .addClass('popup')
             .appendTo($('body'))
@@ -266,6 +272,20 @@ class Map {
 
         // Shrink down image, if applicable
         $popup.find('.wiki-image').css({maxWidth: (150/normalSize) * size, maxHeight: (150/normalSize) * size})
+
+        $popupBackdrop.on('click', function(e) {
+            $popup.remove()
+            $popupBackdrop.remove()
+            let lngLat = map.map.unproject([e.pageX, e.pageY])
+            console.log({
+                lngLat: lngLat,
+                point: map.map.project(lngLat)
+            })
+            map.map.fire('click', {
+                lngLat: lngLat,
+                point: map.map.project(lngLat)
+            })
+        })
 
         return $popup
     }
