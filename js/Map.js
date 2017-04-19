@@ -297,7 +297,7 @@ class Map {
 
     buildLayers() {
         let layers = [
-            {id: 'bg',       type: 'background',            paint: {'background-color': '#eee', 'background-pattern': 'background'}},
+            {id: 'bg',       type: 'background',            paint: {'background-color': '#333', 'background-pattern': 'background'}},
             {id: 'water',    type: 'fill', source: 'world', paint: {'fill-color': '#ACC7F2', 'fill-pattern': 'water4'}, filter: ['==', 'type', 'water'   ]},
             {id: 'land',     type: 'fill', source: 'world', paint: {'fill-color': '#eeeeee', 'fill-pattern': 'grass' }, filter: ['==', 'type', 'land'    ]},
             {id: 'forest',   type: 'fill', source: 'world', paint: {'fill-color': '#a4c9a4', 'fill-pattern': 'forest'}, filter: ['==', 'type', 'forest'  ]},
