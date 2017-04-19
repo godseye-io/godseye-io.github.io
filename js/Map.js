@@ -205,11 +205,7 @@ class Map {
             var features = this.map.queryRenderedFeatures(e.point)
 
             if (features.length && features[0].properties.wiki_html) {
-                this.map.getCanvas().style.cursor = features.length ? 'pointer' : ''
-
-                let center = features[0].geometry.type == 'Point'
-                    ? features[0].geometry.coordinates
-                    : turf.centroid(features[0]).geometry.coordinates
+                let imgHtml = features[0].properties.wiki_image && `<img class="wiki-image" src="${features[0].properties.wiki_image}" />`
 
                 let html = features[0].properties.wiki_html
 
@@ -217,45 +213,13 @@ class Map {
                 let withoutDl = _($(html)).chain().filter(el => el.tagName != 'DL').value()
                 html = $('<div>').append(withoutDl).html()
 
-                let imgHtml = features[0].properties.wiki_image && `<img class="wiki-image" src="${features[0].properties.wiki_image}" />`
-
                 html = `
-                    <div class="wiki-content-wrapper">
-                        ${imgHtml || ''}
-                        <div class="wiki-desc">
-                            ${html}
-                        </div>
-                    </div>
-                `
+                    ${imgHtml || ''}
+                    <div class="wiki-desc">
+                        ${html}
+                    </div>`
 
-                let popup = new mapboxgl.Popup({offset: [0, -30]})
-                    .setLngLat(center)
-                    .setHTML(html)
-                    .addTo(this.map)
-
-                // Calculate target size of popup
-                const normalSize = 543
-                let size = Math.min(normalSize, window.innerWidth - 60, window.innerHeight - 60)
-
-                // On small screens, force the popup to the center
-                if (size < normalSize) {
-                    // Add CSS class for absolute positioning and to override Mapbox's translation and flex-direction logic
-                    $(popup._container).addClass('popup-center')
-
-                    // Set the offsets manually to center it on the screen
-                    $(popup._container).css({top: (window.innerHeight - size) / 2, left: (window.innerWidth - size) / 2})
-
-                    // Restrict content height
-                    $(popup._container).find('.wiki-content-wrapper').css({height: (394/normalSize) * size})
-                    
-                    // Adjust content padding
-                    let paddingY = ((85/normalSize) * size) + 'px'
-                    let paddingX = ((25/normalSize) * size) + 'px'
-                    $(popup._container).find('.mapboxgl-popup-content').css({maxWidth: size, maxHeight: size, padding: `${paddingY} ${paddingX}`})
-
-                    // Shrink down images
-                    $(popup._container).find('.wiki-image').css({maxWidth: (150/normalSize) * size, maxHeight: (150/normalSize) * size})
-                }
+                map.showPopup(html)
             }
         })
 
@@ -269,6 +233,41 @@ class Map {
                 this.map.getCanvas().style.cursor = ''
             }
         })
+    }
+
+    showPopup(html) {
+        // Calculate target size of popup
+        const normalSize = 543
+        let size = Math.min(normalSize, window.innerWidth - 60, window.innerHeight - 60)
+
+        // Adjust content padding
+        let paddingY = ((85/normalSize) * size) + 'px'
+        let paddingX = ((25/normalSize) * size) + 'px'
+
+        let $popup = $('<div>')
+            .addClass('popup')
+            .appendTo($('body'))
+            // Set the offsets manually to center it on the screen
+            .css({
+                top: (window.innerHeight - size) / 2,
+                left: (window.innerWidth - size) / 2,
+                padding: `${paddingY} ${paddingX}`
+            })
+            .append(
+                $('<div>')
+                    .addClass('popup-content-wrapper')
+                    .css({
+                        height: (469/normalSize) * size,
+                        width:  size
+                    })
+                    .html(html),
+                $('<div>').addClass('popup-overlay')
+            )
+
+        // Shrink down image, if applicable
+        $popup.find('.wiki-image').css({maxWidth: (150/normalSize) * size, maxHeight: (150/normalSize) * size})
+
+        return $popup
     }
 
     buildLayers() {
