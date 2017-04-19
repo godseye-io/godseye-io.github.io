@@ -76,17 +76,17 @@ class Map {
                 {title: 'Minor',      layer: 'sea_2',      selected: true, icon: false}
             ]},
             {title: 'Castles', selected: true, icon: false, expanded: true, children: [
-                {title: 'Major',      layer: 'fort_1',     selected: true, icon: false},
-                {title: 'Minor',      layer: 'fort_2',     selected: true, icon: false},
-                {title: 'Holdfasts',  layer: 'fort_3',     selected: true, icon: false}
+                {title: 'Major',      layer: ['fort_1',     'point_fort_1'],     selected: true, icon: false},
+                {title: 'Minor',      layer: ['fort_2',     'point_fort_2'],     selected: true, icon: false},
+                {title: 'Holdfasts',  layer: ['fort_3',     'point_fort_3'],     selected: true, icon: false}
             ]},
             {title: 'Cities', selected: true, icon: false, expanded: true, children: [
-                {title: 'Major',      layer: 'large_city', selected: true, icon: false},
-                {title: 'Minor',      layer: 'small_city', selected: true, icon: false},
-                {title: 'Villages',   layer: 'town',       selected: true, icon: false}
+                {title: 'Major',      layer: ['large_city', 'point_large_city'], selected: true, icon: false},
+                {title: 'Minor',      layer: ['small_city', 'point_small_city'], selected: true, icon: false},
+                {title: 'Villages',   layer: ['town',       'point_town'      ], selected: true, icon: false}
             ]},
-            {title: 'Ruins',    layers: ['town_ruin', 'fort_ruin'], selected: true, icon: false},
-            {title: 'The Wall', layer: 'wall-extrusion',            selected: true, icon: false}
+            {title: 'Ruins',    layers: ['town_ruin', 'point_town_ruin', 'fort_ruin', 'point_fort_ruin'], selected: true, icon: false},
+            {title: 'The Wall', layer: 'wall-extrusion', selected: true, icon: false}
         ]
 
         let $panel = $('#layer-switcher .panel-body').empty()
@@ -326,6 +326,40 @@ class Map {
             //     }
             // }
         ]
+
+        let pointLayerBase = {
+            "type": "circle",
+            "source": "location",
+            "layout": {
+            },
+            "paint": {
+                'circle-radius': 5,
+                'circle-color': '#fff',
+                'circle-opacity': 0.1,
+                'circle-stroke-width': 1,
+                'circle-stroke-color': '#000',
+                'circle-stroke-opacity': 0.5
+            }
+        }
+
+        let pointLayerConfigs = {
+            town_ruin:  {filter: ['all', ['==', 'type', 'town'  ], ['==', 'ruin', true ]]},
+            fort_ruin:  {filter: ['all', ['==', 'type', 'fort_2'], ['==', 'ruin', true ]]},
+            town:       {filter: ['all', ['==', 'type', 'town'  ], ['==', 'ruin', false]]},
+            fort_3:     {filter: ['all', ['==', 'type', 'fort_3'], ['==', 'ruin', false]]},
+            fort_2:     {filter: ['all', ['==', 'type', 'fort_2'], ['==', 'ruin', false]]},
+            small_city: {},
+            fort_1:     {filter: ['all', ['==', 'type', 'fort_1'], ['==', 'ruin', false]]},
+            large_city: {}
+        }
+
+        _.each(pointLayerConfigs, (pointLayerConfig, symbolLayerName) => {
+            let pointLayerName = 'point_' + symbolLayerName
+            let layer = Object.assign(_.cloneDeep(pointLayerBase), pointLayerConfig)
+            layer.id = pointLayerName
+            layer.filter = pointLayerConfig.filter || ['==', 'type', layer.id]
+            layers.push(layer)
+        })
 
         let locationLayerBase = {
             "type": "symbol",

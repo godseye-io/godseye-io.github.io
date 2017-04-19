@@ -1035,6 +1035,7 @@
             "properties": {
                 "name": "The Wolfswood",
                 "wiki_name": "Wolfswood",
+                "type": "region_2",
                 "ruin": false,
                 "wiki_html": "<p>The <b>wolfswood</b> is a large forest in the north named for the great many wolves one can hear howling in the night. It is made up of oak, evergreen and black brier, as well as sentinels, soldier pines, and hawthorn, beech, ash, chestnuts, ironwoods, and firs. Weirwoods are occasionally found isolated or in pairs. It contains abundant timber. Besides wolves, other animals living in the wolfswood include boar, deer, elk, badgers, rabbits, foxes, and bears.</p>\n<br>",
                 "wiki_image": "https://awoiaf.westeros.org/images/thumb/f/f3/The_North.png/185px-The_North.png"
@@ -5691,22 +5692,6 @@
                 "ruin": false,
                 "wiki_html": "<p>The <b>north</b> or the <b>North</b> is one of the constituent regions of Westeros and was a sovereign nation ruled by Kings in the North before Aegon's Conquest. The largest region of the Seven Kingdoms, the dominion of House Stark extends from the border of the New Gift, which is controlled by the Night's Watch, to the southern edge of the Neck far to the south.</p><p>The north has been ruled by the Starks for thousands of years from the castle known as Winterfell. Notable bannermen of the region include Bolton, Cerwyn, Dustin, Flint, Glover, Hornwood, Karstark, Manderly, Mormont, Reed, Ryswell, Tallhart, and Umber. Bastards of noble origin raised in the north are given the surname Snow.\n</p>",
                 "wiki_image": "https://awoiaf.westeros.org/images/thumb/c/cd/The_North2.jpg/200px-The_North2.jpg"
-            }
-        },
-        {
-            "type": "Feature",
-            "geometry": {
-                "type": "Point",
-                "coordinates": [
-                    -19.31774432302683,
-                    2.0548421944605195
-                ]
-            },
-            "properties": {
-                "name": "Westeros",
-                "ruin": false,
-                "wiki_html": "<p><b>Westeros</b> is one of the four known continents in the known world, the others being Essos, Sothoryos, and Ulthos. Most of the area of Westeros is covered by a political entity known as the Seven Kingdoms, while the far north beyond the Wall includes the free folk. The closest foreign nations to Westeros are the Free Cities, a collection of independent city-states across the narrow sea in western Essos. To the south of Westeros lie the Summer Isles.\n</p>",
-                "wiki_image": "https://awoiaf.westeros.org/images/thumb/7/7b/World_map_Westeros.png/200px-World_map_Westeros.png"
             }
         },
         {
