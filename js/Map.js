@@ -255,6 +255,8 @@ class Map {
             .appendTo($('body'))
             // Set the offsets manually to center it on the screen
             .css({
+                height: (543/normalSize) * size,
+                width: (543/normalSize) * size,
                 top: (window.innerHeight - size) / 2,
                 left: (window.innerWidth - size) / 2,
                 padding: `${paddingY} ${paddingX}`
@@ -264,7 +266,11 @@ class Map {
                     .addClass('popup-content-wrapper')
                     .css({
                         height: (469/normalSize) * size,
-                        width:  size
+                        width: size,
+                        'padding-right': ((23/normalSize) * size) + 17,
+                        'padding-top': (70/normalSize) * size,
+                        'padding-left': (14/normalSize) * size,
+                        top: (10/normalSize) * size
                     })
                     .html(html),
                 $('<div>').addClass('popup-overlay')
@@ -784,7 +790,11 @@ class Map {
                 map.setVisibleLayers(data.layers)
 
                 map.title = data.title
-                $('.map-title').text(map.title)
+
+                // Dumb hack to display map title on large-ish screens
+                if (window.innerWidth >= 1000) {
+                    $('.map-title').css({display: 'block'})
+                }
             }
         })
     }

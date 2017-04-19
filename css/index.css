@@ -122,6 +122,7 @@ body {
 }
 
 .map-title {
+    display: none;
     background-image: url(../images/scroll-banner.png);
     position: absolute;
     top: 10px;
@@ -153,7 +154,6 @@ body {
 }
 
 .popup-content-wrapper {
-    height: 390px;
     overflow-y: scroll; 
     position: absolute;
     right: -17px;
