@@ -32,55 +32,23 @@ Promise.all([
     $('[data-toggle=toggle]').bootstrapToggle()
 
     $('.share-map').on('click', () => {
-        bootbox.dialog({
+        let $dialog = bootbox.dialog({
             title: 'Share Map',
             message: $('<div>').append(
                     $('<div>'     ).addClass('sharing-instructions')
                         .text('These are all optional - you can just skip to generating the link if you want.'),
                     $('<input>'   ).addClass('form-control sharing-title'      ).attr('placeholder', 'Title'      ),
                     $('<input>'   ).addClass('form-control sharing-author'     ).attr('placeholder', 'Author'     ),
-                    $('<textarea>').addClass('form-control sharing-description').attr('placeholder', 'Description')
+                    $('<textarea>').addClass('form-control sharing-description').attr('placeholder', 'Description'),
+                    
+                    $('<div>'     ).addClass('sharing-image-instructions')
+                        .text("Alternatively, here's an Imgur link if you just want a static image:"),
+                    $('<input>'   ).addClass('form-control sharing-image-link' ).attr('placeholder', 'Generating...'),
                 )
                 .wrap($('<div>')).parent().html(),
             buttons: {
                 cancel: {
                     label: 'Cancel'
-                },
-                image: {
-                    label: 'Generate Image',
-                    className: 'btn-default',
-                    callback: () => {
-                        // Force a rerender
-                        map.map._rerender()
-
-                        let canvas = map.map.getCanvas()
-                        let ctx    = canvas.getContext('webgl')
-
-                        let imgData = canvas.toDataURL({
-                            format: 'png',
-                            left:   0,
-                            top:    0,
-                            width:  canvas.width,
-                            height: canvas.height
-                        }).replace(/.*,/, '')
-
-                        $.ajax({
-                            url: 'https://api.imgur.com/3/image',
-                            method: 'POST',
-                            headers: {
-                                Authorization: 'Client-ID 79642fcadc44981',
-                                Accept: 'application/json'
-                            },
-                            data: {
-                                image: imgData,
-                                type: 'base64'
-                            },
-                            success: function(result) {
-                                let id = result.data.id
-                                window.open('https://imgur.com/gallery/' + id, '_imgur')
-                            }
-                        })
-                    }
                 },
                 link: {
                     label: 'Generate Link',
@@ -92,6 +60,7 @@ Promise.all([
                             title:       $modal.find('.sharing-title'      ).val(),
                             author:      $modal.find('.sharing-author'     ).val(),
                             description: $modal.find('.sharing-description').val(),
+                            imgur_id:    $dialog.data('imgur_id'),
                             timestamp:   moment.now()
                         }).then(id => {
                             let url     = _.trimEnd(window.location.origin, '/')
@@ -111,13 +80,21 @@ Promise.all([
 
                             $el.find('.btn[data-bb-handler=cancel]').remove()
 
-                            let input = $el.find('input[type=text]').get(0)
+                            let input = $el.find('input[type=text]').focus().get(0)
                             input.setSelectionRange(0, input.value.length)
                         })
                     }
                 }
             },
             onEscape: true
+        })
+
+        generateMapImage().then(imageId => {
+            $dialog
+                .data('imgur_id', imageId)
+                .find('.sharing-image-link')
+                    .removeAttr('placeholder')
+                    .val('http://i.imgur.com/' + imageId + '.png')
         })
     })
 })
@@ -157,4 +134,43 @@ function getQueryParams() {
             params[key] = value ? decodeURIComponent(value.replace(/\+/g, ' ')) : ''
             return params;
         }, {})
+}
+
+function generateMapImage() {
+    return new Promise((resolve, reject) => {
+        // Force a rerender
+        map.map._rerender()
+
+        let canvas = map.map.getCanvas()
+        let ctx    = canvas.getContext('webgl')
+
+        let imgData = canvas.toDataURL({
+            format: 'png',
+            left:   0,
+            top:    0,
+            width:  canvas.width,
+            height: canvas.height
+        }).replace(/.*,/, '')
+
+        $.ajax({
+            url: 'https://api.imgur.com/3/image',
+            method: 'POST',
+            headers: {
+                Authorization: 'Client-ID 79642fcadc44981',
+                Accept: 'application/json'
+            },
+            data: {
+                image: imgData,
+                type: 'base64'
+            },
+            success: function(result) {
+                if (result && result.data && result.data.link) {
+                    resolve(result.data.id)
+                }
+                else {
+                    reject(result)
+                }
+            }
+        })
+    })
 }

@@ -121,6 +121,16 @@ body {
     margin-top: 10px;
 }
 
+.sharing-image-instructions {
+    font-style: italic;
+    text-align: center;
+    padding: 10px;
+}
+
+.sharing-image-link {
+    text-align: center;
+}
+
 .map-title {
     display: none;
     background-image: url(../images/scroll-banner.png);
