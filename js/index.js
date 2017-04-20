@@ -27,7 +27,7 @@ Promise.all([
 ]).then(results => {
     window.locations = results[0]
     window.world     = results[1]
-    window.map       = new Map({locations: locations, world: world, map_id: queryParams.map_id || null})
+    window.map       = new Map({locations: locations, world: world, map_id: queryParams.map_id || null, query: queryParams.q || null})
 
     $('[data-toggle=toggle]').bootstrapToggle()
 

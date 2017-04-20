@@ -49,6 +49,39 @@ class Map {
             if (this.config && this.config.map_id) {
                 this.load(this.config.map_id)
             }
+
+            if (this.config && this.config.query) {
+                let query = map.config.query
+
+                if (query.startsWith('The ')) {
+                    query = query.substr(4)
+                }
+
+                let result = _(locations.features).chain().map(f => {
+                    let name = f.properties.name
+
+                    if (name.startsWith('The ')) {
+                        name = name.substr(4)
+                    }
+
+                    return {
+                        distance: Levenshtein.get(name, query),
+                        feature: f
+                    }
+                }).sortBy('distance').head().value()
+
+                if (result) {
+                    let center = result.feature.geometry.coordinates
+
+                    if (result.feature.geometry.type != 'Point') {
+                        center = turf.centroid(result.feature).geometry.coordinates
+                    }
+
+                    this.map.setCenter(center)
+                    this.map.setZoom(7.5)
+                    this.map.setPitch(50)
+                }
+            }
         })
 
         return this
