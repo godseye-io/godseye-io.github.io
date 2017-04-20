@@ -22,8 +22,8 @@ $('#version').text(window.api_version)
 window.queryParams = getQueryParams()
 
 Promise.all([
-    $.get('data/locations.json'),
-    $.get('data/world-map-4326-20.json')
+    $.get('data/locations.min.json'),
+    $.get('data/world.min.json')
 ]).then(results => {
     window.locations = results[0]
     window.world     = results[1]
