@@ -1,6 +1,6 @@
 let _  = require('lodash')
 let fs = require('fs')
-let resolution = 100
+let resolution = 1000
 
 fs.readFile('data/world.json', 'utf8', (err, res) => {
     if (err) {throw err}
