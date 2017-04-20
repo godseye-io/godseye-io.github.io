@@ -251,21 +251,32 @@ class Map {
             var features = this.map.queryRenderedFeatures(e.point)
 
             if (features.length && features[0].properties.wiki_html) {
-                let imgHtml = features[0].properties.wiki_image && `<img class="wiki-image" src="${features[0].properties.wiki_image}" />`
+                if (features[0].properties.wiki_image) {
+                    let img    = new Image()
+                    img.onload = showWikiPopup
+                    img.src    = features[0].properties.wiki_image
+                }
+                else {
+                    showWikiPopup()
+                }
 
-                let html = features[0].properties.wiki_html
+                function showWikiPopup() {
+                    let imgHtml = features[0].properties.wiki_image && `<img class="wiki-image" src="${features[0].properties.wiki_image}" />`
 
-                // Strip out any detail list (<dl>) elements - they're used for disambiguation info at top of wiki articles
-                let withoutDl = _($(html)).chain().filter(el => el.tagName != 'DL').value()
-                html = $('<div>').append(withoutDl).html()
+                    let html = features[0].properties.wiki_html
 
-                html = `
-                    ${imgHtml || ''}
-                    <div class="wiki-desc">
-                        ${html}
-                    </div>`
+                    // Strip out any detail list (<dl>) elements - they're used for disambiguation info at top of wiki articles
+                    let withoutDl = _($(html)).chain().filter(el => el.tagName != 'DL').value()
+                    html = $('<div>').append(withoutDl).html()
 
-                map.showPopup(html)
+                    html = `
+                        ${imgHtml || ''}
+                        <div class="wiki-desc">
+                            ${html}
+                        </div>`
+
+                    map.showPopup(html)
+                }
             }
         })
 
@@ -322,7 +333,7 @@ class Map {
         $popup.find('.wiki-image').css({maxWidth: (150/normalSize) * size, maxHeight: (150/normalSize) * size})
 
         $popupBackdrop.on('click', function(e) {
-            $popup.remove()
+            $popup.fadeOut(100)
             $popupBackdrop.remove()
             let lngLat = map.map.unproject([e.pageX, e.pageY])
             console.log({
@@ -833,6 +844,16 @@ class Map {
 
                 map.title = data.title
                 $('.map-title').text(map.title)
+
+                $('.map-title').on('click', () => {
+                    let html = $('<div>').append(
+                        $('<div>').addClass('map-info-popup-author'     ).text(data.author     ),
+                        $('<div>').addClass('map-info-popup-title'      ).text(data.title      ),
+                        $('<div>').addClass('map-info-popup-description').text(data.description)
+                    ).html()
+
+                    map.showPopup(html)
+                })
 
                 // Dumb hack to display map title on large-ish screens
                 if (window.innerWidth >= 1000 && map.title) {

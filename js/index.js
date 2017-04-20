@@ -174,3 +174,9 @@ function generateMapImage() {
         })
     })
 }
+
+function precache() {
+    ;(new Image()).src = 'images/scroll.png'
+    ;(new Image()).src = 'images/scroll-overlay.png'
+    ;(new Image()).src = 'images/scroll-banner.png'
+}
