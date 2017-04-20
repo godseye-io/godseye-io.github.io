@@ -43,7 +43,7 @@ Promise.all([
                     
                     $('<div>'     ).addClass('sharing-image-instructions')
                         .text("Alternatively, here's an Imgur link if you just want a static image:"),
-                    $('<input>'   ).addClass('form-control sharing-image-link' ).attr('placeholder', 'Generating...'),
+                    $('<input>'   ).addClass('form-control sharing-image-link' ).attr('placeholder', 'Generating...')
                 )
                 .wrap($('<div>')).parent().html(),
             buttons: {
