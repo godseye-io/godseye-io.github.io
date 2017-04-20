@@ -51,24 +51,34 @@ class Map {
             }
 
             if (this.config && this.config.query) {
-                let query = map.config.query
+                let query = map.config.query.toLowerCase()
 
-                if (query.startsWith('The ')) {
+                if (query.startsWith('the ')) {
                     query = query.substr(4)
                 }
 
-                let result = _(locations.features).chain().map(f => {
-                    let name = f.properties.name
+                let results = _(locations.features).chain().map(f => {
+                    let name = f.properties.name.toLowerCase()
 
-                    if (name.startsWith('The ')) {
+                    if (name.startsWith('the ')) {
                         name = name.substr(4)
                     }
 
-                    return {
-                        distance: Levenshtein.get(name, query),
-                        feature: f
+                    let score = Levenshtein.get(name, query)
+
+                    if (name == query) {
+                        // Give major advantage to exact match so it always wins
+                        score -= 1000
                     }
-                }).sortBy('distance').head().value()
+                    else if (name.includes(query)) {                        
+                        // Give significant boost to full supersets of the query, so e.g. "craster" matches Craster's Keep instead of Lychester
+                        score -= 100
+                    }
+
+                    return {score: score, feature: f}
+                }).sortBy('score').value()
+
+                let result = results[0]
 
                 if (result) {
                     let center = result.feature.geometry.coordinates
