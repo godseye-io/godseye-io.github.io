@@ -16,7 +16,7 @@
 // var bounds = [[0,0], [1000,1000]];
 // var image = L.imageOverlay('uqm_map_full.png', bounds).addTo(map);
 
-window.api_version = '0.0.2'
+window.api_version = '0.0.3'
 $('#version').text(window.api_version)
 
 window.queryParams = getQueryParams()
