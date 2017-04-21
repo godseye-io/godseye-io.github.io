@@ -248,9 +248,19 @@ class Map {
                 lngLat: e.lngLat,
                 point: e.point
             })
+
             var features = this.map.queryRenderedFeatures(e.point)
 
             if (features.length && features[0].properties.wiki_html) {
+				if (features[0].properties.name == 'Gods Eye') {
+					map.godseye = (map.godseye || 0) + 1
+
+					if (map.godseye >= 3) {
+						map.doEasterEgg()
+						return
+					}
+				}
+
                 if (features[0].properties.wiki_image) {
                     let img    = new Image()
                     img.onload = showWikiPopup
@@ -469,7 +479,7 @@ class Map {
                 paint:  {iconTranslate: [0, 0], 'text-opacity': 0.35, 'icon-opacity': 0.3}},
             fort_ruin:  {size: 16, font: 'Regular', icon: 'tower-color-bw', iconScale: 0.3,
                 filter: ['all', ['==', 'type', 'fort_2'], ['==', 'ruin', true]],
-                layout: {textOffset: [0, -2], textAnchor: 'bottom'},
+                layout: {textOffset: [0, -2], textAnchor: 'bottom', iconOffset: [0, -40]},
                 paint:  {iconTranslate: [0, 0], 'text-opacity': 0.35, 'icon-opacity': 0.3}},
             region_3:   {size: 12, font: 'Light Italic',    transform: 'uppercase'},
             town:       {size: 14, font: 'Light', icon: 'village', iconScale: 0.2,
@@ -478,19 +488,19 @@ class Map {
                 paint:  {iconTranslate: [0, 0]}},
             fort_3:     {size: 16, font: 'Regular', icon: 'tower-color-bw', iconScale: 0.2,
                 filter: ['all', ['==', 'type', 'fort_3'], ['==', 'ruin', false]],
-                layout: {textOffset: [0, -2], textAnchor: 'bottom'},
+                layout: {textOffset: [0, -2], textAnchor: 'bottom', iconOffset: [0, -26]},
                 paint:  {iconTranslate: [0, 0]}},
             region_2:   {size: 16, font: 'Light Italic',    transform: 'uppercase'},
             fort_2:     {size: 16, font: 'Regular', icon: 'tower-color-bw', iconScale: 0.3,
                 filter: ['all', ['==', 'type', 'fort_2'], ['==', 'ruin', false]],
-                layout: {textOffset: [0, -2], textAnchor: 'bottom'},
+                layout: {textOffset: [0, -2], textAnchor: 'bottom', iconOffset: [0, -40]},
                 paint:  {iconTranslate: [0, 0], "text-color": '#ccc'}},
             small_city: {size: 16, font: 'Semibold', icon: 'city-color-bw', iconScale: 0.3,
                 layout: {textOffset: [0, -2], textAnchor: 'bottom'},
                 paint:  {iconTranslate: [0, 0], "text-color": '#aaa'}},
             fort_1:     {size: 16, font: 'Regular', icon: 'tower-color-bw', iconScale: 0.45,
                 filter: ['all', ['==', 'type', 'fort_1'], ['==', 'ruin', false]],
-                layout: {textOffset: [0, -2], textAnchor: 'bottom'},
+                layout: {textOffset: [0, -2], textAnchor: 'bottom', iconOffset: [0, -60]},
                 paint:  {iconTranslate: [0, 0]}},
             large_city: {size: 18, font: 'Bold', transform: 'uppercase', icon: 'city-color-bw', iconScale: 0.37,
                 layout: {textOffset: [0, -2], textAnchor: 'bottom'},
@@ -899,4 +909,66 @@ class Map {
             })
         })
     }
+
+	doEasterEgg() {
+		let audio = new Audio()
+		audio.addEventListener('canplaythrough', function() {
+			if (this.currentTime < 14) {this.currentTime = 14}
+			this.play()
+
+			doSteps([
+				{location: "King's Landing", speed: 0.35, curve: 3, zoom:  4, pitch: 0,  bearing:   0, duration:     0, easing: n => n}, //  0 /  13
+				{location: "King's Landing", speed: 0.35, curve: 3, zoom:  8, pitch: 0,                duration:  6000, easing: n => n}, //  6 /  19
+				{location: "King's Landing",              curve: 3, zoom: 10, pitch: 65, bearing: 150, duration:  2083, easing: n => n},
+				{location: "King's Landing",              curve: 3, zoom: 10, pitch: 65, bearing: 210, duration:   834, easing: n => n},
+				{location: "King's Landing",              curve: 3, zoom: 10, pitch:  0, bearing:   0, duration:  2083, easing: n => n}, //  11 /  24
+				{location: "Winterfell",     speed: 0.35, curve: 3, zoom: 10, pitch: 30,               duration:  9000, easing: n => n}, //  20 /  33
+				{location: "Winterfell",                  curve: 3, zoom: 10, pitch: 65, bearing: 150, duration:  3750, easing: n => n},
+				{location: "Winterfell",                  curve: 3, zoom: 10, pitch: 65, bearing: 210, duration:  1500, easing: n => n},
+				{location: "Winterfell",                  curve: 3, zoom: 10, pitch: 65, bearing:   0, duration:  3750, easing: n => n}, //  29 /  42
+				{location: "Castle Black",                curve: 1, zoom: 10, pitch: 65, bearing:   0, duration:  7000, easing: n => n}, //  36 /  49
+				{location: "The Wall",                    curve: 3, zoom:  8, pitch: 65, bearing:   0, duration:  7000, easing: n => n}, //  40 /  53
+				{location: "Braavos",                     curve: 3, zoom: 10, pitch: 65, bearing: 120, duration: 10000, easing: n => n}, //  50 /  63
+				{location: "Braavos",                     curve: 3, zoom: 10, pitch: 65, bearing: 270, duration:  3750, easing: n => n},
+				{location: "Braavos",                     curve: 3, zoom: 10, pitch: 65, bearing: 330, duration:  1500, easing: n => n},
+				{location: "Braavos",                     curve: 3, zoom: 10, pitch: 65, bearing: 120, duration:  3750, easing: n => n}, //  59 /  72
+				{location: "Meereen",                     curve: 1, zoom: 10, pitch: 65, bearing: 180, duration:  7000, easing: n => n}, //  66 /  79
+				{location: "Meereen",                     curve: 3, zoom: 10, pitch: 65, bearing: 330, duration:  3333, easing: n => n},
+				{location: "Meereen",                     curve: 3, zoom: 10, pitch: 65, bearing:  30, duration:  1334, easing: n => n},
+				{location: "Meereen",                     curve: 3, zoom: 10, pitch: 65, bearing: 180, duration:  3333, easing: n => n}, //  74 /  87
+				{location: "Sunspear",                    curve: 1, zoom: 10, pitch: 65, bearing: 240, duration:  6000, easing: n => n}, //  80 /  93
+				{location: "Sunspear",                    curve: 3, zoom: 10, pitch: 65, bearing:  30, duration:  2083, easing: n => n},
+				{location: "Sunspear",                    curve: 3, zoom: 10, pitch: 65, bearing:  90, duration:   834, easing: n => n},
+				{location: "Sunspear",                    curve: 3, zoom: 10, pitch: 65, bearing: 240, duration:  2083, easing: n => n}, //  85 /  98,
+				{location: "King's Landing",              curve: 1, zoom:  4, pitch:  0, bearing:   0, duration:  5000, easing: n => n}, //  94 / 103
+			])
+		})
+
+		audio.src = 'images/theme.mp3'
+
+		function flyTo(options) {
+			let feature = _.find(window.locations.features, f => f.properties.name == options.location)
+			let center = feature.geometry.type == 'Point' ? feature.geometry.coordinates : turf.centroid(feature).geometry.coordinates
+			map.map.flyTo(Object.assign(options || {}, {center}))
+		}
+
+		function doSteps(steps) {
+			var start = moment().valueOf()
+			var time  = start
+
+			for (var i = 0; i < steps.length; i++) {
+				var step = steps[i]
+				step.stepnum = (i + 1)
+				executeDeferred(step, time)
+				time += step.duration
+			}
+		}
+
+		function executeDeferred(step, time) {
+			setTimeout(function() {
+				console.log('doing step #' + step.stepnum)
+				flyTo(step)
+			}, time - moment().valueOf())
+		}
+	}
 }
