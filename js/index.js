@@ -18,7 +18,7 @@
 
 precache()
 
-window.api_version = '0.0.4'
+window.api_version = '0.0.5'
 $('#version').text(window.api_version)
 
 window.queryParams = getQueryParams()
