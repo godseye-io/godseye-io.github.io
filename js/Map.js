@@ -117,6 +117,7 @@ class Map {
 						},
 						properties: {
 							name: name,
+							sprite: name,
 							type: 'sigil',
 							id: map.getObjectId(),
 							group: sigil.group,
@@ -206,26 +207,96 @@ class Map {
 	}
 
 	registerEvents() {
-		this.map.on('mousemove', e => {
-			document.getElementById('info').innerHTML =
-				// e.point is the x, y coordinates of the mousemove event relative
-				// to the top-left corner of the map
-				JSON.stringify(e.point) + '<br />' +
-				// e.lngLat is the longitude, latitude geographical position of the event
-				JSON.stringify(e.lngLat);
-		})
+		window.featureTarget = null
+		window.isDragging    = false
+		window.newLocations  = []
 
-		this.map.on('zoom', e => {
-			this.buildMetafeatures()
-			let zoomFactor = Math.pow(2, this.map.getZoom())
+		this.map.on('mousemove',   onMouseMove )
+		this.map.on('mousedown',   onMouseDown )
+		this.map.on('mouseup',     onMouseUp   )
+		this.map.on('click',       onClick     )
+		this.map.on('contextmenu', onRightClick)
+		this.map.on('zoom',        onZoom      )
 
-			// map.getLayer('city_1').layout['icon-size'] = zoomFactor * 0.02
-			this.map._rerender()
-		})
+		this.map.on('mouseenter', 'sigil', onSigilEnter)
+		this.map.on('mouseleave', 'sigil', onSigilLeave)
 
-		window.newLocations = []
+		function onSigilEnter(e) {
+			// Disregard if we're still dragging
+			if (window.isDragging) {return}
 
-		this.map.on('click', e => {
+			// map.map.setPaintProperty('sigil', 'icon-halo-width', 10)
+			map.map.getCanvas().style.cursor = 'move'
+			window.featureTarget = e.features[0]
+			map.map.dragPan.disable()
+		}
+
+		function onSigilLeave(e) {
+			// Disregard if we're still dragging
+			if (window.isDragging) {return}
+
+			// map.map.setPaintProperty('sigil', 'icon-halo-width', 10)
+			map.map.getCanvas().style.cursor = ''
+			window.featureTarget = null
+			map.map.dragPan.enable()
+		}
+
+		function onMouseMove(e) {
+			// If dragging, update the object
+			if (window.isDragging) {
+				map.map.getCanvas().style.cursor = 'grabbing'
+				// console.log(moment().valueOf() + ' ' + window.featureTarget.properties.name)
+				map.updateSource('sigil', {properties: {
+					id: window.featureTarget.properties.id,
+				}}, {geometry: {coordinates: [e.lngLat.lng, e.lngLat.lat]}})
+				return
+			}
+
+
+			// document.getElementById('info').innerHTML =
+			// 	// e.point is the x, y coordinates of the mousemove event relative
+			// 	// to the top-left corner of the map
+			// 	JSON.stringify(e.point) + '<br />' +
+			// 	// e.lngLat is the longitude, latitude geographical position of the event
+			// 	JSON.stringify(e.lngLat);
+
+
+			// var features = this.map.queryRenderedFeatures(e.point, {layers: ['raw-line']})
+
+			var features = map.map.queryRenderedFeatures(e.point)
+
+			if (features.length && features[0].properties.wiki_html) {
+				map.map.getCanvas().style.cursor = 'pointer'
+			}
+			else if (features.length && features[0].properties.type == 'sigil') {
+				// map.map.getCanvas().style.cursor = 'not-allowed'
+			}
+			else {
+				map.map.getCanvas().style.cursor = ''
+			}
+		}
+
+		function onMouseDown(e) {
+			// Handle drag start
+			if (window.featureTarget && window.featureTarget.properties.type == 'sigil') {
+				window.isDragging = true
+				map.map.getCanvas().style.cursor = 'grab'
+				map.map.on('mousemove', onMouseMove)
+				map.map.once('mouseup', onMouseUp)
+			}
+		}
+
+		function onMouseUp(e) {
+			// Handle drag end
+			if (window.isDragging) {
+				map.map.getCanvas().style.cursor = ''
+				window.isDragging = false
+				map.map.off('mousemove', onMouseMove)
+				return
+			}
+		}
+
+		function onClick(e) {
 			// console.log(e.lngLat)
 			// let name = prompt()
 			// if (!name) {return}
@@ -273,91 +344,114 @@ class Map {
 			//     source.setData(source._data)
 			//     this.buildMetafeatures()
 			// }
-		})
 
-		this.map.on('mousemove', e => {
-			var features = this.map.queryRenderedFeatures(e.point, {layers: ['raw-line']})
-		})
-
-		// this.addLine('Winterfell', 'The Wall')
-
-		// Create a popup, but don't add it to the map yet.
-		var popup = new mapboxgl.Popup({closeButton: false, closeOnClick: false})
-	
-	
-		this.map.on('click', e => {
 			console.log({
 				lngLat: e.lngLat,
 				point: e.point
 			})
 
-			var features = this.map.queryRenderedFeatures(e.point)
+			var features = map.map.queryRenderedFeatures(e.point)
+			if (!features.length) {return}
 
-			if (features.length) {
-				if (features[0].properties.type == 'sigil') {
-					// Kill the feature
-					let sigilSrc = map.map.getSource('sigil')
+			if (!features[0].properties.wiki_html) {return}
 
-					sigilSrc._data.features = _.reject(sigilSrc._data.features, f => features[0].properties.id == f.properties.id)
+			if (features[0].properties.name == 'Gods Eye') {
+				map.godseye = (map.godseye || 0) + 1
 
-					sigilSrc.setData(sigilSrc._data)
+				if (map.godseye >= 3) {
+					map.doEasterEgg()
 					return
 				}
-				else if (!features[0].properties.wiki_html) {
-					return
-				}
-
-				if (features[0].properties.name == 'Gods Eye') {
-					map.godseye = (map.godseye || 0) + 1
-
-					if (map.godseye >= 3) {
-						map.doEasterEgg()
-						return
-					}
-				}
-
-				if (features[0].properties.wiki_image) {
-					let img    = new Image()
-					img.onload = showWikiPopup
-					img.src    = features[0].properties.wiki_image
-				}
-				else {
-					showWikiPopup()
-				}
-
-				function showWikiPopup() {
-					let imgHtml = features[0].properties.wiki_image && `<img class="wiki-image" src="${features[0].properties.wiki_image}" />`
-
-					let html = features[0].properties.wiki_html
-
-					// Strip out any detail list (<dl>) elements - they're used for disambiguation info at top of wiki articles
-					let withoutDl = _($(html)).chain().filter(el => el.tagName != 'DL').value()
-					html = $('<div>').append(withoutDl).html()
-
-					html = `
-						${imgHtml || ''}
-						<div class="wiki-desc">
-							${html}
-						</div>`
-
-					map.showPopup(html)
-				}
 			}
-		})
 
-		this.map.on('mousemove', e => {
-			var features = this.map.queryRenderedFeatures(e.point)
-
-			if (features.length && features[0].properties.wiki_html) {
-				this.map.getCanvas().style.cursor = 'pointer'
-			}
-			else if (features.length && features[0].properties.type == 'sigil') {
-				this.map.getCanvas().style.cursor = 'not-allowed'
+			if (features[0].properties.wiki_image) {
+				let img    = new Image()
+				img.onload = showWikiPopup
+				img.src    = features[0].properties.wiki_image
 			}
 			else {
-				this.map.getCanvas().style.cursor = ''
+				showWikiPopup()
 			}
-		})
+
+			function showWikiPopup() {
+				let imgHtml = features[0].properties.wiki_image && `<img class="wiki-image" src="${features[0].properties.wiki_image}" />`
+
+				let html = features[0].properties.wiki_html
+
+				// Strip out any detail list (<dl>) elements - they're used for disambiguation info at top of wiki articles
+				let withoutDl = _($(html)).chain().filter(el => el.tagName != 'DL').value()
+				html = $('<div>').append(withoutDl).html()
+
+				html = `
+					${imgHtml || ''}
+					<div class="wiki-desc">
+						${html}
+					</div>`
+
+				map.showPopup(html)
+			}
+		}
+
+		function onRightClick(e) {
+			var features = map.map.queryRenderedFeatures(e.point)
+			if (!features.length) {return}
+
+			if (features[0].properties.type == 'sigil') {
+				let $dialog = bootbox.dialog({
+					title: 'Edit Feature',
+					message: $('<div>').append(
+							$('<input>').addClass('form-control feature-edit-name').attr('placeholder', 'Name')
+						)
+						.wrap($('<div>')).parent().html(),
+					buttons: {
+						cancel: {
+							label: 'Cancel'
+						},
+						delete: {
+							label: 'Delete',
+							className: 'btn-danger',
+							callback: e => {
+								let $modal  = $(e.target.closest('.modal'))
+								let feature = $modal.data('feature')
+								map.deleteFromSource('sigil', {properties: {id: feature.properties.id}})
+							}
+						},
+						save: {
+							label: 'Save',
+							className: 'btn-success',
+							callback: e => {
+								let $modal  = $(e.target).closest('.modal')
+								let feature = $modal.data('feature')
+								let name    = $modal.find('.feature-edit-name').val()
+								map.updateSource('sigil', {properties: {id: feature.properties.id}}, {properties: {name}})
+							}
+						}
+					},
+					onEscape: true
+				})
+
+				$dialog.find('.feature-edit-name').val(features[0].properties.name)
+
+				$dialog.data('feature', features[0])
+				$dialog.find('[data-bb-handler="delete"]').css({float: 'left'})
+				$dialog.on('shown.bs.modal', e => $('.feature-edit-name').focus())
+				$dialog.on('keypress', e => {
+					if (e.which == 13) {
+						$dialog.find('[data-bb-handler="save"]').trigger('click')
+					}
+				})
+
+				return
+			}
+		}
+
+		function onZoom(e) {
+			map.buildMetafeatures()
+			let zoomFactor = Math.pow(2, map.map.getZoom())
+
+			// map.getLayer('city_1').layout['icon-size'] = zoomFactor * 0.02
+			map.map._rerender()
+		}
 	}
 
 	showPopup(html) {
@@ -663,7 +757,7 @@ class Map {
 					'text-size': 16,
 					'text-offset': [0, -1.7],
 					'text-anchor': 'bottom', 
-					'icon-image': '{name}',
+					'icon-image': '{sprite}',
 					'text-field': '{name}'
 					// 'text-offset': [0, 0]
 				}
@@ -1077,5 +1171,25 @@ class Map {
 				flyTo(step)
 			}, time - moment().valueOf())
 		}
+	}
+
+	updateSource(sourceName, where, updates) {
+		let source = this.map.getSource(sourceName)
+		let testfn = _.matches(where)
+		let record = _.find(source._data.features, testfn)
+
+		_.merge(record, updates)
+
+		source.setData(source._data)
+	}
+
+	deleteFromSource(sourceName, where) {
+		let source = this.map.getSource(sourceName)
+		let testfn = _.matches(where)
+		let record = _.find(source._data.features, testfn)
+
+		source._data.features = _.reject(source._data.features, testfn)
+
+		source.setData(source._data)
 	}
 }
