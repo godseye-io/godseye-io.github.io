@@ -24,6 +24,13 @@ $('#version').text(window.api_version)
 
 window.queryParams = getQueryParams()
 
+$('body').on('keydown', e => {
+    if (e.which == 27 && window.$wikiPopup) {
+        $('.popup, .popup-backdrop').remove()
+        window.$wikiPopup = null
+    }
+})
+
 Promise.all([
     $.get('data/locations.min.json'),
     $.get('data/world.min.json')

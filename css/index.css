@@ -215,6 +215,23 @@ body {
 
 /*****************
 *                *
+*  EDITOR POPUP  *
+*                *
+*****************/
+.feature-edit-name {
+    margin-bottom: 15px;
+}
+
+.feature-edit-size-label {
+    display: inline-block;
+    width: 50px;
+    text-align: right;
+    font-weight: bold;
+    padding-right: 15px;
+}
+
+/*****************
+*                *
 *  SCROLL POPUP  *
 *                *
 *****************/

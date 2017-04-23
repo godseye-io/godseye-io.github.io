@@ -105,28 +105,9 @@ class Map {
 				drop: (e, ui) => {
 					let name   = $(ui.draggable).closest('.sigil-option').attr('value')
 					let coords = map.map.unproject([ui.position.left + 27.5, ui.position.top + 65])
+					let sigil  = _.find(sigils, {name})
 
-					let sigil    = _.find(sigils, {name})
-					let sigilSrc = map.map.getSource('sigil')
-
-					sigilSrc._data.features.push({
-						type: 'Feature',
-						geometry: {
-							type: 'Point',
-							coordinates: [coords.lng, coords.lat]
-						},
-						properties: {
-							name: name,
-							sprite: name,
-							type: 'sigil',
-							id: map.getObjectId(),
-							group: sigil.group,
-							hidden: false,
-							size: 1
-						}
-					})
-
-					sigilSrc.setData(sigilSrc._data)
+					map.addSigil([coords.lng, coords.lat], name, name, sigil.group, 1)
 				}
 			})
 		})
@@ -388,7 +369,7 @@ class Map {
 						${html}
 					</div>`
 
-				map.showPopup(html)
+				window.$wikiPopup = map.showPopup(html)
 			}
 		}
 
@@ -400,7 +381,11 @@ class Map {
 				let $dialog = bootbox.dialog({
 					title: 'Edit Feature',
 					message: $('<div>').append(
-							$('<input>').addClass('form-control feature-edit-name').attr('placeholder', 'Name')
+							$('<input>').addClass('form-control feature-edit-name').attr('placeholder', 'Name'),
+							$('<div>').addClass('feature-edit-size-container').append(
+								$('<div>').addClass('feature-edit-size-label').text('Size'),
+								$('<input>').addClass('feature-edit-size')
+							)
 						)
 						.wrap($('<div>')).parent().html(),
 					buttons: {
@@ -420,17 +405,28 @@ class Map {
 							label: 'Save',
 							className: 'btn-success',
 							callback: e => {
-								let $modal  = $(e.target).closest('.modal')
-								let feature = $modal.data('feature')
-								let name    = $modal.find('.feature-edit-name').val()
-								map.updateSource('sigil', {properties: {id: feature.properties.id}}, {properties: {name}})
+								let $modal     = $(e.target).closest('.modal')
+								let feature    = $modal.data('feature')
+								let name       = $modal.find('.feature-edit-name').val()
+								let size       = $modal.find('.feature-edit-size').val() * 1
+								let textSize   = 16 * Math.sqrt(size)
+								let textOffset = [0, -1.7 * Math.sqrt(size)]
+								map.updateSource('sigil', {properties: {id: feature.properties.id}}, {properties: {name, size, textSize, textOffset}})
 							}
 						}
 					},
 					onEscape: true
 				})
 
+				$dialog.find('.modal-dialog').css({width: 300})
+
 				$dialog.find('.feature-edit-name').val(features[0].properties.name)
+				$dialog.find('.feature-edit-size').bootstrapSlider({
+					min: 0.5,
+					max: 1.5,
+					step: 0.1,
+					value: features[0].properties.size
+				})
 
 				$dialog.data('feature', features[0])
 				$dialog.find('[data-bb-handler="delete"]').css({float: 'left'})
@@ -506,6 +502,7 @@ class Map {
 				lngLat: lngLat,
 				point: map.map.project(lngLat)
 			})
+			window.$wikiPopup = null
 		})
 
 		return $popup
@@ -584,6 +581,23 @@ class Map {
 			layer.id = pointLayerName
 			layer.filter = pointLayerConfig.filter || ['==', 'type', layer.id]
 			layers.push(layer)
+		})
+
+		layers.push({
+			id: 'point_sigil',
+			"type": "circle",
+			"source": "sigil",
+			filter: ['!=', 'hidden', true],
+			"layout": {
+			},
+			"paint": {
+				'circle-radius': 5,
+				'circle-color': '#fff',
+				'circle-opacity': 0.1,
+				'circle-stroke-width': 1,
+				'circle-stroke-color': '#000',
+				'circle-stroke-opacity': 0.5
+			}
 		})
 
 		let locationLayerBase = {
@@ -754,12 +768,14 @@ class Map {
 				},
 				layout: {
 					'text-font': ['Open Sans Regular'],
-					'text-size': 16,
-					'text-offset': [0, -1.7],
+					'text-size': {type: 'identity', property: 'textSize'},
+					'text-offset': {type: 'identity', property: 'textOffset'},
 					'text-anchor': 'bottom', 
 					'icon-image': '{sprite}',
-					'text-field': '{name}'
-					// 'text-offset': [0, 0]
+					'icon-size': {type: 'identity', property: 'size'},
+					'text-field': '{name}',
+					'icon-allow-overlap': true,
+					'text-allow-overlap': true
 				}
 			},
 			{
@@ -1034,6 +1050,24 @@ class Map {
 		})
 	}
 
+	getSigils() {
+		return _.map(map.map.getSource('sigil')._data.features, f => {
+			return {
+				name:        f.properties.name,
+				sprite:      f.properties.sprite,
+				size:        f.properties.size,
+				coordinates: f.geometry.coordinates
+			}
+		})
+	}
+
+	setSigils(records) {
+		_.each(records, record => {
+			let sigil  = _.find(sigils, {name: record.sprite})
+			map.addSigil(record.coordinates, record.name, record.sprite, sigil.group, record.size)
+		})
+	}
+
 	load(map_id) {
 		$.ajax({
 			url: 'https://api.github.com/gists/' + map_id,
@@ -1046,6 +1080,7 @@ class Map {
 				map.map.setZoom   (data.map_zoom   )
 				map.map.setCenter (data.map_center )
 
+				map.setSigils(data.sigils || [])
 				map.setVisibleLayers(data.layers)
 
 				map.title = data.title
@@ -1078,7 +1113,8 @@ class Map {
 				map_pitch:        map.map.getPitch(),
 				map_zoom:         map.map.getZoom(),
 				map_center:       map.map.getCenter(),
-				layers:           map.getVisibleLayers()
+				layers:           map.getVisibleLayers(),
+				sigils:           map.getSigils()
 			})
 
 			$.ajax({
@@ -1189,6 +1225,32 @@ class Map {
 		let record = _.find(source._data.features, testfn)
 
 		source._data.features = _.reject(source._data.features, testfn)
+
+		source.setData(source._data)
+	}
+
+	addSigil(coordinates, name, sprite, group, size) {
+		let source = map.map.getSource('sigil')
+
+		source._data.features.push({
+			type: 'Feature',
+			geometry: {
+				type: 'Point',
+				coordinates
+			},
+			properties: {
+				name,
+				sprite,
+				group,
+				size,
+				textSize:       Math.sqrt(size) * 16,
+				textOffset: [0, Math.sqrt(size) * -1.7],
+				type: 'sigil',
+				id: map.getObjectId(),
+				hidden: false,
+				size: 1
+			}
+		})
 
 		source.setData(source._data)
 	}
