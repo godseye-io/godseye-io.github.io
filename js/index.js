@@ -109,27 +109,32 @@ Promise.all([
     })
 })
 
-if (!window.location.host.includes('localhost')) {
+if (!window.location.host.includes('localhost') && _.isEmpty(window.queryParams)) {
     showInfo()
 }
 
 $('.info-button').on('click', showInfo)
 
 function showInfo() {
-    bootbox.dialog({
+    let $dialog = bootbox.dialog({
         message: $('<div>').append(
             $('#app-info-template').clone().html()
         ).html(),
         onEscape: true,
         buttons: {
             ok: {
-                label: 'Neat',
-                className: 'btn-success'
+                label: 'Neat!',
+                className: 'btn-primary'
             }
         },
         callback: result => {
             console.log(result)
         }
+    })
+
+    $dialog.find('.modal-body').css({
+        'max-height': 500,
+        'overflow-y': 'scroll'
     })
 }
 

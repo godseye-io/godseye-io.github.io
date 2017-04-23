@@ -13,6 +13,11 @@ body {
     overflow-y: hidden;
 }
 
+.easter-egg-info {
+    margin-top: 20px;
+    color: #ddd;
+}
+
 /********
 *       *
 *  MAP  *
