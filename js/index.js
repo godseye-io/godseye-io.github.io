@@ -17,6 +17,7 @@
 // var image = L.imageOverlay('uqm_map_full.png', bounds).addTo(map);
 
 precache()
+initSigils()
 
 window.api_version = '0.0.5'
 $('#version').text(window.api_version)
@@ -181,4 +182,53 @@ function precache() {
     ;(new Image()).src = 'images/scroll.png'
     ;(new Image()).src = 'images/scroll-overlay.png'
     ;(new Image()).src = 'images/scroll-banner.png'
+}
+
+function initSigils() {
+    $.get('data/sigils.json').then(sigils => {
+        $.get('images/shield-sprite.json').then(spriteInfo => {
+            let $options = $('#sigil-options')
+
+            window.sigils = sigils
+
+            // TODO: group by region, house vs personal, etc
+            // let groups = _(sigils).chain().sortBy('name').groupBy('group').value()
+
+            _(sigils).chain().sortBy('name', 'asc').each(sigil => {
+                if (!spriteInfo[sigil.name]) {return}
+
+                $('<div>').addClass('sigil-option').attr('value', sigil.name).append(
+                    $('<div>').addClass('sigil-option-name').text(sigil.name),
+                    $('<div>').addClass('sigil-option-img').css({
+                        'background-position-x': -spriteInfo[sigil.name].x,
+                        'background-position-y': -spriteInfo[sigil.name].y
+                    })
+                ).appendTo($options)
+            }).value()
+
+            $('#sigil-search').on('keyup', e => {
+                let search = $('#sigil-search').val()
+
+                if (search) {
+                    $options.find('.sigil-option').addClass('sigil-hidden')
+
+                    _.each(sigils, sigil => {
+                        if (sigil.name.toLowerCase().includes(search.toLowerCase())) {
+                            $options.find(`.sigil-option[value="${sigil.name}"]`).removeClass('sigil-hidden')
+                        }
+                    })
+                }
+                else {
+                    $options.find('.sigil-option').removeClass('sigil-hidden')
+                }
+            })
+
+            // Make sigils draggable
+            $('.sigil-option-img').draggable({
+                containment: $('body'),
+                helper: 'clone',
+                scroll: false
+            })
+        })
+    })
 }

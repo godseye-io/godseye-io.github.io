@@ -26,6 +26,13 @@ class Map {
 					// "reference": {"type": "image", "url": "images/reference-locations.png", "coordinates": [[-28.74608909182468, 23.21466942878296], [28.74608909182468, 23.21466942878296], [28.74608909182468, -23.21466942878296], [-28.74608909182468, -23.21466942878296]]},
 					"world":     {"type": "geojson", "data": config.world    },
 					"location":  {"type": "geojson", "data": config.locations},
+					sigil: {
+						"type": "geojson",
+						"data": {
+							"type": "FeatureCollection",
+							"features": []
+						}
+					},
 					"line": {
 						"type": "geojson",
 						"data": {
@@ -92,6 +99,35 @@ class Map {
 					this.map.setPitch(50)
 				}
 			}
+
+			// Set up dropzone behavior
+			$(this.map.getCanvas()).droppable({
+				drop: (e, ui) => {
+					let name   = $(ui.draggable).closest('.sigil-option').attr('value')
+					let coords = map.map.unproject([ui.position.left + 27.5, ui.position.top + 65])
+
+					let sigil    = _.find(sigils, {name})
+					let sigilSrc = map.map.getSource('sigil')
+
+					sigilSrc._data.features.push({
+						type: 'Feature',
+						geometry: {
+							type: 'Point',
+							coordinates: [coords.lng, coords.lat]
+						},
+						properties: {
+							name: name,
+							type: 'sigil',
+							id: map.getObjectId(),
+							group: sigil.group,
+							hidden: false,
+							size: 1
+						}
+					})
+
+					sigilSrc.setData(sigilSrc._data)
+				}
+			})
 		})
 
 		return this
@@ -138,7 +174,7 @@ class Map {
 			{title: 'The Wall', layer: 'wall-extrusion', selected: true, icon: false}
 		]
 
-		let $panel = $('#layer-switcher .panel-body').empty()
+		let $panel = $('#layer-switcher-body').empty()
 		let $tree  = $('<div>').addClass('layer-tree').appendTo($panel)
 		let layers = []
 
@@ -175,7 +211,7 @@ class Map {
 				// e.point is the x, y coordinates of the mousemove event relative
 				// to the top-left corner of the map
 				JSON.stringify(e.point) + '<br />' +
-					// e.lngLat is the longitude, latitude geographical position of the event
+				// e.lngLat is the longitude, latitude geographical position of the event
 				JSON.stringify(e.lngLat);
 		})
 
@@ -241,7 +277,6 @@ class Map {
 
 		this.map.on('mousemove', e => {
 			var features = this.map.queryRenderedFeatures(e.point, {layers: ['raw-line']})
-			this.map.getCanvas().style.cursor = features.length ? 'pointer' : ''
 		})
 
 		// this.addLine('Winterfell', 'The Wall')
@@ -258,7 +293,20 @@ class Map {
 
 			var features = this.map.queryRenderedFeatures(e.point)
 
-			if (features.length && features[0].properties.wiki_html) {
+			if (features.length) {
+				if (features[0].properties.type == 'sigil') {
+					// Kill the feature
+					let sigilSrc = map.map.getSource('sigil')
+
+					sigilSrc._data.features = _.reject(sigilSrc._data.features, f => features[0].properties.id == f.properties.id)
+
+					sigilSrc.setData(sigilSrc._data)
+					return
+				}
+				else if (!features[0].properties.wiki_html) {
+					return
+				}
+
 				if (features[0].properties.name == 'Gods Eye') {
 					map.godseye = (map.godseye || 0) + 1
 
@@ -301,7 +349,10 @@ class Map {
 			var features = this.map.queryRenderedFeatures(e.point)
 
 			if (features.length && features[0].properties.wiki_html) {
-				this.map.getCanvas().style.cursor = features.length ? 'pointer' : ''
+				this.map.getCanvas().style.cursor = 'pointer'
+			}
+			else if (features.length && features[0].properties.type == 'sigil') {
+				this.map.getCanvas().style.cursor = 'not-allowed'
 			}
 			else {
 				this.map.getCanvas().style.cursor = ''
@@ -596,6 +647,28 @@ class Map {
 
 		let others = [
 			{
+				id: 'sigil',
+				type: 'symbol',
+				source: 'sigil',
+				filter: ['!=', 'hidden', true],
+				paint: {
+					'icon-translate': [0, 0],
+					'icon-translate-anchor': 'map',
+					"text-halo-color": "#202",
+					"text-color": '#fff',
+					"text-halo-width": 1
+				},
+				layout: {
+					'text-font': ['Open Sans Regular'],
+					'text-size': 16,
+					'text-offset': [0, -1.7],
+					'text-anchor': 'bottom', 
+					'icon-image': '{name}',
+					'text-field': '{name}'
+					// 'text-offset': [0, 0]
+				}
+			},
+			{
 				'id': 'raw-line',
 				'type': 'line',
 				source: "line",
@@ -828,7 +901,7 @@ class Map {
  
 	getObjectId() {
 		this.lastObjectId++
-		return window.lastObjectId
+		return this.lastObjectId
 	}
 
 	getLayerVisibility(id) {

@@ -16,6 +16,7 @@
         <link href="https://gitcdn.github.io/bootstrap-toggle/2.2.2/css/bootstrap-toggle.min.css" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery.fancytree/2.22.0/skin-win7/ui.fancytree.min.css">
+        <!--<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css" rel="stylesheet" />-->
 
         <!-- Site styles-->
         <link rel="stylesheet" href="css/index.css">
@@ -29,11 +30,24 @@
             <i class="fa fa-info-circle fa-2x fa-inverse" aria-hidden="true"></i>
         </div>
 
-        <div id="layer-switcher" class="panel panel-default">
-            <div class="panel-heading">
-                <h3 class="panel-title" data-toggle="collapse" href="#layer-switcher-body">Layers</h3>
+        <div id="accordion-menu" class="panel panel-default">
+            <div id="layer-switcher" class="panel">
+                <div class="panel panel-heading">
+                    <h3 class="panel-title" data-parent="#accordion-menu" data-toggle="collapse" href="#layer-switcher-body">Layers</h3>
+                </div>
+                <div class="panel-body collapse" id="layer-switcher-body"></div>
             </div>
-            <div class="panel-body collapse" id="layer-switcher-body"></div>
+
+            <div id="tools" class="panel">
+                <div class="panel panel-heading">
+                    <h3 class="panel-title" data-parent="#accordion-menu" data-toggle="collapse" href="#tools-body">Sigils</h3>
+                </div>
+                <div class="panel-body collapse" id="tools-body">
+                    <!--<h4    id="sigil-header">Sigils</h4>-->
+                    <input id="sigil-search" class="form-control input-sm" type="text" placeholder="Search"></input>
+                    <div   id="sigil-options"></div>
+                </div>
+            </div>
         </div>
 
         <div id="version"></div>
@@ -81,6 +95,7 @@
         <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery.fancytree/2.22.0/jquery.fancytree.min.js'></script>
         <script src='https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.18.1/moment.min.js'></script>
         <script src='js/lib/levenshtein.min.js'></script>
+        <!--<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/js/select2.min.js"></script>-->
 
         <!--/*<script src='threebox/src/three64.js'></script>*/-->
         <!--/*<script src='threebox/src/Threebox.js'></script>*/-->

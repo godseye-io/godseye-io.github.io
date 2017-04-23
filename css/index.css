@@ -58,20 +58,30 @@ body {
 *  LAYER SWITCHER  *
 *                  *
 *******************/
-#layer-switcher {
+#accordion-menu {
     position: absolute;
     left: 10px;
     top: 50px;
     width: 119px;
 }
 
-#layer-switcher .panel-heading {
+#accordion-menu .panel {
+    margin-bottom: 0;
+}
+
+#accordion-menu .panel-heading {
     height: 20px;
     text-align: center;
     padding-top: 0px;
+    margin: 0;
 }
 
-#layer-switcher .panel-body {
+#accordion-menu .panel-heading .panel-title {
+    font-weight: bold;
+    font-size: 11pt;
+}
+
+#accordion-menu .panel-body {
     padding: 0;
 }
 
@@ -84,22 +94,63 @@ body {
     float: right;
 }
 
-#layer-switcher .fancytree-expander,
-#layer-switcher .fancytree-checkbox {
+#layer-switcher-body .fancytree-expander,
+#layer-switcher-body .fancytree-checkbox {
     display: none;
 }
 
-#layer-switcher .fancytree-title {
+#layer-switcher-body .fancytree-title {
     border: none;
     background: none !important;
     font-style: normal !important;
 }
 
-#layer-switcher .fancytree-has-children:not(.fancytree-partsel):not(.fancytree-selected) .fancytree-title {opacity: 0.25;}
-#layer-switcher .fancytree-has-children.fancytree-partsel:not(.fancytree-selected) .fancytree-title {opacity: 0.55;}
-#layer-switcher .fancytree-has-children.fancytree-partsel.fancytree-selected .fancytree-title {opacity: 1;}
-#layer-switcher :not(.fancytree-has-children):not(.fancytree-selected) .fancytree-title {opacity: 0.25;}
-#layer-switcher :not(.fancytree-has-children).fancytree-selected .fancytree-title {opacity: 1;}
+#layer-switcher-body .fancytree-has-children:not(.fancytree-partsel):not(.fancytree-selected) .fancytree-title {opacity: 0.25;}
+#layer-switcher-body .fancytree-has-children.fancytree-partsel:not(.fancytree-selected) .fancytree-title {opacity: 0.55;}
+#layer-switcher-body .fancytree-has-children.fancytree-partsel.fancytree-selected .fancytree-title {opacity: 1;}
+#layer-switcher-body :not(.fancytree-has-children):not(.fancytree-selected) .fancytree-title {opacity: 0.25;}
+#layer-switcher-body :not(.fancytree-has-children).fancytree-selected .fancytree-title {opacity: 1;}
+
+/***********
+*          *
+*  SIGILS  *
+*          *
+***********/
+#sigil-options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    width: 130px;
+}
+
+.sigil-option-name {
+    font-size: 9px;
+    text-align: center;
+}
+
+.sigil-option-img {
+    margin-left: auto;
+    margin-right: auto;
+    background-image: url(../images/shield-sprite.png);
+    width: 30px;
+    height: 30px;
+}
+
+#tools {
+    /*max-height: 500px;*/
+    /*overflow: hidden;*/
+    overflow-x: hidden;
+}
+
+#sigil-options {
+    max-height: 500px;
+    overflow-y: scroll;
+    /*padding-right: 15px;*/
+}
+
+.sigil-hidden {
+    display: none;
+}
 
 /************
 *           *

@@ -1,0 +1,2669 @@
+{
+    "Aemon Rivers": {
+        "x": 30,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Aerion Brightflame": {
+        "x": 240,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Algood": {
+        "x": 0,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Allyrion": {
+        "x": 30,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Ambrose": {
+        "x": 60,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Appleton": {
+        "x": 60,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Arlan of Pennytree": {
+        "x": 0,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Arryn": {
+        "x": 30,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Ashford": {
+        "x": 60,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Baelish (ancestral)": {
+        "x": 90,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Baelish": {
+        "x": 90,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Ball": {
+        "x": 90,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Banefort": {
+        "x": 0,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Bar Emmon": {
+        "x": 30,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Baratheon": {
+        "x": 60,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Beesbury": {
+        "x": 90,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Belmore": {
+        "x": 120,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Bennis of the Brown Shield": {
+        "x": 120,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Bettley": {
+        "x": 120,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Big Walder Frey": {
+        "x": 120,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Blackbar": {
+        "x": 0,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Blackfyre": {
+        "x": 30,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Blackmont": {
+        "x": 60,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Blacktyde": {
+        "x": 90,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Blackwood": {
+        "x": 120,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Blanetree": {
+        "x": 150,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Blount": {
+        "x": 150,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Bolling": {
+        "x": 150,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Bolton": {
+        "x": 150,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Borrell": {
+        "x": 150,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Botley": {
+        "x": 0,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Bracken": {
+        "x": 30,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Brave Companions": {
+        "x": 60,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Brazen Beasts": {
+        "x": 90,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Bridges": {
+        "x": 120,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Bronn of the Blackwater": {
+        "x": 150,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Broom": {
+        "x": 180,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Brune": {
+        "x": 180,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Brynden Rivers (Bloodraven)": {
+        "x": 180,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Brynden Tully (the Blackfish)": {
+        "x": 180,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Buckler": {
+        "x": 180,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Buckwell": {
+        "x": 180,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Bulwer": {
+        "x": 0,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Burley": {
+        "x": 30,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Bushy": {
+        "x": 60,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Butterwell": {
+        "x": 90,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Byrch": {
+        "x": 120,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Bywater": {
+        "x": 150,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Cafferen": {
+        "x": 180,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Cargyll": {
+        "x": 210,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Caron": {
+        "x": 210,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Cassel": {
+        "x": 210,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Caswell": {
+        "x": 210,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Celtigar": {
+        "x": 210,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Cerwyn": {
+        "x": 210,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Charlton": {
+        "x": 210,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Chelsted": {
+        "x": 0,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Chester": {
+        "x": 30,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Chyttering": {
+        "x": 60,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Clayton Suggs": {
+        "x": 90,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Clegane": {
+        "x": 120,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Cockshaw": {
+        "x": 150,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Codd": {
+        "x": 180,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Coldwater": {
+        "x": 210,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Cole": {
+        "x": 240,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Colen of Greenpools": {
+        "x": 240,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Condon": {
+        "x": 240,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Connington": {
+        "x": 240,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Corbray": {
+        "x": 240,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Cordwayner": {
+        "x": 240,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Costayne": {
+        "x": 240,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Cox": {
+        "x": 240,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Crane": {
+        "x": 0,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Creighton Longbough": {
+        "x": 30,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Cressey": {
+        "x": 60,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Crowl": {
+        "x": 90,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Cuy": {
+        "x": 120,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Dalt": {
+        "x": 150,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Darklyn": {
+        "x": 180,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Darry": {
+        "x": 210,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Dayne": {
+        "x": 240,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Doggett": {
+        "x": 270,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Donniger": {
+        "x": 270,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Drox": {
+        "x": 270,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Duncan the Tall": {
+        "x": 270,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Dunn": {
+        "x": 270,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Durrandon": {
+        "x": 270,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Dustin": {
+        "x": 270,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Edgerton": {
+        "x": 270,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Egen": {
+        "x": 270,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Elesham": {
+        "x": 0,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Erenford": {
+        "x": 30,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Errol": {
+        "x": 60,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Estermont": {
+        "x": 90,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Estren": {
+        "x": 120,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Farman": {
+        "x": 150,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Farring": {
+        "x": 180,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Fell": {
+        "x": 210,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Fenn": {
+        "x": 240,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Ferren": {
+        "x": 270,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Fisher": {
+        "x": 300,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Flint of Flint's Finger": {
+        "x": 300,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Flint of Widow's Watch": {
+        "x": 300,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Florent": {
+        "x": 300,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Follard": {
+        "x": 300,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Foote": {
+        "x": 300,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Footly": {
+        "x": 300,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Forrester": {
+        "x": 300,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Fossoway of Cider Hall": {
+        "x": 300,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Fossoway of New Barrel": {
+        "x": 300,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Fowler": {
+        "x": 0,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Frey": {
+        "x": 30,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Galtry the Green": {
+        "x": 60,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Gardener": {
+        "x": 90,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Garlan Tyrell": {
+        "x": 120,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Garner": {
+        "x": 150,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Gaunt": {
+        "x": 180,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Golden Company": {
+        "x": 210,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Goodbrook": {
+        "x": 240,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Goodbrother of Hammerhorn": {
+        "x": 270,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Goodbrother of Shatterstone": {
+        "x": 300,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Gower": {
+        "x": 330,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Graceford": {
+        "x": 330,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Grafton": {
+        "x": 330,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Grandison": {
+        "x": 330,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Graves": {
+        "x": 330,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Greenfield": {
+        "x": 330,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Grell": {
+        "x": 330,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Greyiron": {
+        "x": 330,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Greyjoy": {
+        "x": 330,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Grimm": {
+        "x": 330,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Haigh": {
+        "x": 330,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Hamell": {
+        "x": 0,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Harclay": {
+        "x": 30,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Hardyng": {
+        "x": 60,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Harlaw of Glimmering": {
+        "x": 90,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Harlaw of Grey Garden": {
+        "x": 120,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Harlaw of Harlaw Hall": {
+        "x": 150,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Harlaw of Harridan Hill": {
+        "x": 180,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Harlaw of Ten Towers": {
+        "x": 210,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Harrold Hardyng": {
+        "x": 240,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Harroway": {
+        "x": 270,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Harte": {
+        "x": 300,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Hastwyck": {
+        "x": 330,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Hasty": {
+        "x": 360,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Hawthorne": {
+        "x": 360,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Hayford": {
+        "x": 360,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Herston": {
+        "x": 360,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Hersy": {
+        "x": 360,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Hetherspoon": {
+        "x": 360,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Hewett": {
+        "x": 360,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Hoare of Harrenhal": {
+        "x": 360,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Hoare of Orkmont": {
+        "x": 360,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Hogg": {
+        "x": 360,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Hollard": {
+        "x": 360,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Hornwood": {
+        "x": 360,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Horpe": {
+        "x": 0,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Hugh of the Vale": {
+        "x": 30,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Hunt": {
+        "x": 60,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Hunter": {
+        "x": 90,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Hutcheson": {
+        "x": 120,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Illifer the Penniless": {
+        "x": 150,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Inchfield": {
+        "x": 180,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Ironsmith": {
+        "x": 210,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Jast": {
+        "x": 240,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Joffrey Baratheon": {
+        "x": 270,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "John the Fiddler": {
+        "x": 300,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Justman": {
+        "x": 330,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Karstark": {
+        "x": 360,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Keath": {
+        "x": 390,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Kellington": {
+        "x": 390,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Kenning of Harlaw": {
+        "x": 390,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Kenning": {
+        "x": 390,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Kettleblack": {
+        "x": 390,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Kidwell": {
+        "x": 390,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Kingsguard": {
+        "x": 390,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Knight of the Laughing Tree": {
+        "x": 390,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Knight of the Red Chicken": {
+        "x": 390,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Knott": {
+        "x": 390,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Lake": {
+        "x": 390,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Langward": {
+        "x": 390,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Lefford": {
+        "x": 390,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Leygood": {
+        "x": 0,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Liddle": {
+        "x": 30,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Lightfoot": {
+        "x": 60,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Lipps": {
+        "x": 90,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Little Walder Frey": {
+        "x": 120,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Locke": {
+        "x": 150,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Lolliston": {
+        "x": 180,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Lonmouth": {
+        "x": 210,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Loras Tyrell": {
+        "x": 0,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Lorch": {
+        "x": 270,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Lothor Brune": {
+        "x": 300,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Lothston": {
+        "x": 330,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Lowther": {
+        "x": 360,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Lyberr": {
+        "x": 390,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Lychester": {
+        "x": 420,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Lydden": {
+        "x": 420,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Lynderly": {
+        "x": 420,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Maekar Targaryen": {
+        "x": 420,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Magnar": {
+        "x": 420,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Mallery": {
+        "x": 420,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Mallister": {
+        "x": 420,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Manderly": {
+        "x": 420,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Manning": {
+        "x": 420,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Marbrand": {
+        "x": 420,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Marsh": {
+        "x": 420,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Martell": {
+        "x": 420,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Massey": {
+        "x": 420,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Mazin": {
+        "x": 420,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Meadows": {
+        "x": 0,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Melcolm": {
+        "x": 30,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Merlyn": {
+        "x": 60,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Merrywether": {
+        "x": 90,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Mertyns": {
+        "x": 120,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Middlebury": {
+        "x": 150,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Mollen": {
+        "x": 180,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Moore": {
+        "x": 210,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Mooton": {
+        "x": 240,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Moreland": {
+        "x": 270,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Mormont": {
+        "x": 300,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Morrigen": {
+        "x": 330,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Moss": {
+        "x": 360,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Mudd": {
+        "x": 390,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Mullendore": {
+        "x": 420,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Musgood": {
+        "x": 450,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Myatt": {
+        "x": 450,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Myre": {
+        "x": 450,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Night's Watch": {
+        "x": 450,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Norcross": {
+        "x": 450,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Norrey": {
+        "x": 450,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Norridge": {
+        "x": 450,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Oakheart": {
+        "x": 450,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Oldflowers": {
+        "x": 450,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Orkwood": {
+        "x": 450,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Orme": {
+        "x": 450,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Osgrey": {
+        "x": 450,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Overton": {
+        "x": 450,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Paege": {
+        "x": 450,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Parren": {
+        "x": 450,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Patrek of King's Mountain": {
+        "x": 0,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Payne": {
+        "x": 30,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Peake": {
+        "x": 60,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Pearse Caron": {
+        "x": 90,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Peasebury": {
+        "x": 120,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Peckledon": {
+        "x": 150,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Plumm": {
+        "x": 180,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Pommingham": {
+        "x": 210,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Poole": {
+        "x": 240,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Poor Fellows": {
+        "x": 270,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Prester": {
+        "x": 300,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Pryor": {
+        "x": 330,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Pyle": {
+        "x": 360,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Qoherys": {
+        "x": 390,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Qorgyle": {
+        "x": 420,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Quentyn Ball (Fireball)": {
+        "x": 450,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Rainbow Guard": {
+        "x": 480,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Rambton": {
+        "x": 480,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Redding": {
+        "x": 480,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Redfort": {
+        "x": 480,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Redwyne": {
+        "x": 480,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Reed": {
+        "x": 480,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Renly Baratheon": {
+        "x": 480,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Rhysling": {
+        "x": 480,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Risley": {
+        "x": 480,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Robb Stark": {
+        "x": 480,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Rogers": {
+        "x": 480,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Rollingford": {
+        "x": 480,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Roote": {
+        "x": 480,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Rosby": {
+        "x": 480,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Rossart (alchemist)": {
+        "x": 480,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Rowan": {
+        "x": 480,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Roxton": {
+        "x": 0,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Royce of Runestone": {
+        "x": 30,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Royce of the Gates of the Moon": {
+        "x": 60,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Ruthermont": {
+        "x": 90,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Ruttiger": {
+        "x": 120,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Ryger": {
+        "x": 150,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Rykker": {
+        "x": 180,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Saltcliffe": {
+        "x": 210,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Sarsfield": {
+        "x": 240,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Seaworth": {
+        "x": 270,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Second Sons": {
+        "x": 300,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Sellsword": {
+        "x": 330,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Selmy": {
+        "x": 360,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Serrett": {
+        "x": 390,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Serry": {
+        "x": 420,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Shadrich (the Mad Mouse)": {
+        "x": 450,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Shawney": {
+        "x": 480,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Shermer": {
+        "x": 510,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Shett of Gull Tower": {
+        "x": 510,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Shett of Gulltown": {
+        "x": 510,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Slate": {
+        "x": 510,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Sloane": {
+        "x": 510,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Slynt": {
+        "x": 510,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Smallwood": {
+        "x": 510,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Sons of the Harpy": {
+        "x": 510,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Sparr": {
+        "x": 510,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Spicer": {
+        "x": 510,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Stackspear": {
+        "x": 510,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Staedmon": {
+        "x": 510,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Stane": {
+        "x": 510,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Stannis Baratheon": {
+        "x": 510,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Stark": {
+        "x": 510,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Staunton": {
+        "x": 510,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Stokeworth": {
+        "x": 510,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Stonetree": {
+        "x": 0,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Stormcrows": {
+        "x": 30,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Stout": {
+        "x": 60,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Strong": {
+        "x": 90,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Sunderland": {
+        "x": 120,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Sunderly": {
+        "x": 150,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Sunglass": {
+        "x": 180,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Swann": {
+        "x": 210,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Swyft": {
+        "x": 240,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Swygert": {
+        "x": 270,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Tallad the Tall": {
+        "x": 300,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Tallhart": {
+        "x": 330,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Tarbeck": {
+        "x": 360,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Targaryen": {
+        "x": 390,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Tarly": {
+        "x": 420,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Tarth": {
+        "x": 450,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Tawney": {
+        "x": 480,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Teague": {
+        "x": 510,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Templeton": {
+        "x": 540,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Terrick": {
+        "x": 540,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "The Blacks": {
+        "x": 540,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "The Greens": {
+        "x": 540,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Thenn": {
+        "x": 540,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Thomas the Threadbare": {
+        "x": 540,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Thorne": {
+        "x": 540,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Tiger Cloaks": {
+        "x": 540,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Tollett": {
+        "x": 540,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Tourney Winner": {
+        "x": 540,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Towers": {
+        "x": 540,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Toyne": {
+        "x": 540,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Trant": {
+        "x": 540,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Tudbury": {
+        "x": 540,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Tully": {
+        "x": 540,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Turnberry": {
+        "x": 540,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Tyrell": {
+        "x": 540,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Uffering": {
+        "x": 540,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Uller": {
+        "x": 0,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Umber": {
+        "x": 30,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Unsullied": {
+        "x": 60,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Upcliff": {
+        "x": 90,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Vaith": {
+        "x": 120,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Vance of Atranta": {
+        "x": 150,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Vance of Wayfarer's Rest": {
+        "x": 180,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Varner": {
+        "x": 210,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Volmark": {
+        "x": 240,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Vypren": {
+        "x": 270,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Vyrwell": {
+        "x": 300,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Wagstaff": {
+        "x": 330,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Walder Rivers": {
+        "x": 360,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Warrior's Sons": {
+        "x": 390,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Waterman": {
+        "x": 420,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Waxley": {
+        "x": 450,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Wayn": {
+        "x": 480,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Waynwood": {
+        "x": 510,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Webber": {
+        "x": 540,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Wells": {
+        "x": 570,
+        "y": 0,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Wendwater": {
+        "x": 570,
+        "y": 30,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Wensington": {
+        "x": 570,
+        "y": 60,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Westbrook": {
+        "x": 570,
+        "y": 90,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Westerling": {
+        "x": 570,
+        "y": 120,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Westford": {
+        "x": 570,
+        "y": 150,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Whent": {
+        "x": 570,
+        "y": 180,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Whitehill": {
+        "x": 570,
+        "y": 210,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Willum": {
+        "x": 570,
+        "y": 240,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Windblown": {
+        "x": 570,
+        "y": 270,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Wode": {
+        "x": 570,
+        "y": 300,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Woodwright": {
+        "x": 570,
+        "y": 330,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Woolfield": {
+        "x": 570,
+        "y": 360,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Wull": {
+        "x": 570,
+        "y": 390,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Wylde": {
+        "x": 570,
+        "y": 420,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Wynch": {
+        "x": 570,
+        "y": 450,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Wythers": {
+        "x": 570,
+        "y": 480,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Yarwyck": {
+        "x": 570,
+        "y": 510,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Yelshire": {
+        "x": 570,
+        "y": 540,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    },
+    "Yew": {
+        "x": 0,
+        "y": 570,
+        "width": 30,
+        "height": 30,
+        "pixelRatio": 1
+    }
+}
